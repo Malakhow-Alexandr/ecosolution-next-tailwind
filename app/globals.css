@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .custom-container {
+    @apply max-w-full tablet:px-[20px] px-[8px] mx-auto mobile:max-w-[480px] mobile:min-w-[360px] tablet:w-[768px]  desktop:w-[1440px];
+  }
+  
+}
