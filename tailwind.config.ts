@@ -19,9 +19,9 @@ const config: Config = {
         secondaryText: "#828382",
         mainElementsColor: "#97D28B",
       },
-      fontFamily:{
-        title:"Oswald",
-        text:"Fira Sans"
+      fontFamily: {
+        title: ['var(--font-oswald)'],
+        text: ['var(--font-fira)']
       },
       screens: {
         mobile: "360px",

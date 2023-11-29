@@ -2,9 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+body {
+  bacground-color: #f3f5fa;
+}
 @layer components {
   .custom-container {
-    @apply max-w-full tablet:px-[20px] px-[8px] mx-auto mobile:max-w-[480px] mobile:min-w-[360px] tablet:w-[768px]  desktop:w-[1440px];
+    @apply max-w-full tablet:px-[20px] px-[8px] mx-auto  mobile:w-[360px] tablet:w-[768px]  desktop:w-[1280px];
   }
-  
+}
+
+.side-bar-button {
+  outline: none;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: transparent;
+  z-index: 500;
 }
