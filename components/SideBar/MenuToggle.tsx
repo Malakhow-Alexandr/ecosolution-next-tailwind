@@ -4,14 +4,14 @@ const Path = (props: any) => (
   <motion.path
     fill="transparent"
     strokeWidth="3"
-    stroke="#147DB8"
+    stroke="#292D32"
     strokeLinecap="round"
     {...props}
   />
 );
 
 export const MenuToggle = ({ toggle }: any) => (
-  <button className="side-bar-button" onClick={toggle}>
+  <button className="sidebar-button" onClick={toggle}>
     <svg width="23" height="23" viewBox="0 0 23 23">
       <Path
         variants={{

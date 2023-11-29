@@ -12,24 +12,8 @@ body {
   .custom-container {
     @apply max-w-full tablet:px-[20px] px-[8px] mx-auto  mobile:w-[360px] tablet:w-[768px]  desktop:w-[1280px];
   }
-}
 
-.side-bar-button {
-  outline: none;
-  border: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 17px;
-  left: 15px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: transparent;
-  z-index: 500;
+  .sidebar-button {
+    @apply border-none outline-none cursor-pointer flex items-center justify-center absolute top-0 left-0 w-[30px] h-[30px] rounded-[50%] bg-transparent;
+  }
 }
