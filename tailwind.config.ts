@@ -19,10 +19,14 @@ const config: Config = {
         secondaryText: "#828382",
         mainElementsColor: "#97D28B",
       },
+      fontFamily:{
+        title:"Oswald",
+        text:"Fira Sans"
+      },
       screens: {
-        mobile: "390px",
-        tablet: "830px",
-        desktop: "1440px",
+        mobile: "360px",
+        tablet: "768px",
+        desktop: "1280px",
       },
     },
   },
