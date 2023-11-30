@@ -12,8 +12,4 @@ body {
   .custom-container {
     @apply max-w-full tablet:px-[20px] px-[8px] mx-auto  mobile:w-[360px] tablet:w-[768px]  desktop:w-[1280px];
   }
-
-  .sidebar-button {
-    @apply border-none outline-none cursor-pointer flex items-center justify-center absolute top-0 left-0 w-[30px] h-[30px] rounded-[50%] bg-transparent;
-  }
 }
