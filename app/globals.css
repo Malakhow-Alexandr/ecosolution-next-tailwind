@@ -20,4 +20,14 @@ body {
       max-width: 480px;
     }
   }
+  .burger-menu {
+    @apply flex flex-col tablet:w-[365px] h-[88%] mx-auto mt-[36px] bg-[#173d33] bg-opacity-75 rounded-[25px] p-[24px];
+    @media (max-width: 479px) {
+      max-width: 100%;
+    }
+
+    @media (min-width: 480px) and (max-width: 767px) {
+      max-width: 464px;
+    }
+  }
 }

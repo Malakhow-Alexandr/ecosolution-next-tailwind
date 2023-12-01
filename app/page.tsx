@@ -1,9 +1,9 @@
-import Image from "next/image";
+import RenewableSection from "@/components/RenewableSection/RenewableSection";
 
 export default function Home() {
   return (
     <main>
-      <section className="pt-[240px]">Hello world</section>
+      <RenewableSection />
     </main>
   );
 }

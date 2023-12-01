@@ -24,7 +24,7 @@ const config: Config = {
         text: ["var(--font-fira)"],
       },
       screens: {
-        mobile: "480px",
+        mobile: "360px",
         tablet: "768px",
         desktop: "1280px",
       },

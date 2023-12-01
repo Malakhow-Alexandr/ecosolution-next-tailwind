@@ -3,7 +3,7 @@ import SideBar from "../SideBar/SideBar";
 
 const Header = () => {
   return (
-    <header className="fixed left-0 right-0 mx-auto">
+    <header className="fixed left-0 right-0 mx-auto pt-[10px]">
       <div className="custom-container flex">
         <div>
           <Logo />
