@@ -3,7 +3,7 @@ import HeroBanner from "@/public/hero/heroBanner.png";
 
 const Hero = () => {
   return (
-    <section>
+    <section className="mb-[36px]">
       <div className="custom-container">
         <Image
           src={HeroBanner}
