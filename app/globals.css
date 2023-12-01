@@ -6,10 +6,18 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  bacground-color: #f3f5fa;
+  background-color: #f3f5fa;
 }
 @layer components {
   .custom-container {
-    @apply max-w-full tablet:px-[20px] px-[8px] mx-auto  mobile:w-[360px] tablet:w-[768px]  desktop:w-[1280px];
+    @apply max-w-full tablet:px-[20px] px-[8px] mx-auto tablet:w-[768px]  desktop:w-[1280px];
+
+    @media (max-width: 479px) {
+      max-width: 100%;
+    }
+
+    @media (min-width: 480px) and (max-width: 767px) {
+      max-width: 480px;
+    }
   }
 }

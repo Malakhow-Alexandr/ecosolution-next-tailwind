@@ -20,11 +20,11 @@ const config: Config = {
         mainElementsColor: "#97D28B",
       },
       fontFamily: {
-        title: ['var(--font-oswald)'],
-        text: ['var(--font-fira)']
+        title: ["var(--font-oswald)"],
+        text: ["var(--font-fira)"],
       },
       screens: {
-        mobile: "360px",
+        mobile: "480px",
         tablet: "768px",
         desktop: "1280px",
       },
