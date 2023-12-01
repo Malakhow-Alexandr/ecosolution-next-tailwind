@@ -2,7 +2,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 const RenewableSection = () => {
   return (
-    <section className="pt-[250px]">
+    <section className="pt-[250px] mb-[30px]">
       <div className="custom-container">
         <h1 className="text-[36px] font-title font-normal text-mainText mb-[24px] leading-[36px]">
           RENEWABLE ENERGY FOR ANY TASK
