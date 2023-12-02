@@ -16,15 +16,15 @@ export const burgerNav = [
     title: "Cases"
   },
   {
-    href: "#",
+    href: "#FAQ",
     title: "FAQ"
   },
   {
-    href: "#",
+    href: "#Customers",
     title: "Customers"
   },
   {
-    href: "#",
+    href: "#Contacts",
     title: "Contact Us"
   }
 ];

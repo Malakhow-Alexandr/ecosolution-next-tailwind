@@ -4,7 +4,8 @@ import {
   TeamSection,
   MainSection,
   ElectricitySection,
-  ServicesSection
+  ServicesSection,
+  CasesSection
 } from "@/components";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <MainSection />
       <ElectricitySection />
       <ServicesSection />
+      <CasesSection />
     </main>
   );
 }
