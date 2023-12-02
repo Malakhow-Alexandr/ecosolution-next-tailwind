@@ -9,6 +9,10 @@ body {
   background-color: #f3f5fa;
 }
 @layer components {
+  .no-scroll {
+    @apply overflow-hidden;
+  }
+
   .custom-container {
     @apply max-w-full tablet:px-[20px] px-[8px] mx-auto tablet:w-[768px]  desktop:w-[1280px];
 
@@ -20,6 +24,7 @@ body {
       max-width: 480px;
     }
   }
+
   .burger-menu {
     @apply flex flex-col tablet:w-[365px] h-[88%] mx-auto mt-[36px] bg-[#173d33] bg-opacity-75 rounded-[25px] p-[24px];
     @media (max-width: 479px) {

@@ -28,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${oswald.variable} ${fira.variable}`}>
       <body>
+        <div id="backdrop-root"></div>
         <Header />
 
         {children}

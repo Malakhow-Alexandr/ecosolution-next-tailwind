@@ -18,7 +18,7 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({ toggle, isOpen }) => {
         close
       </button>
       <span className="block border-b-[1px] border-white w-[100%] mt-[6px] mb-[16px]"></span>
-      <BurgerNav />
+      <BurgerNav closeMenu={toggle} />
     </div>
   );
 };

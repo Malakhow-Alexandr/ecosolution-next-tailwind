@@ -1,4 +1,6 @@
-import React, { ReactNode } from "react";
+"use client";
+import React, { ReactNode, useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 
 interface BackdropProps {
   isOpen: boolean;
@@ -7,17 +9,33 @@ interface BackdropProps {
 }
 
 const Backdrop: React.FC<BackdropProps> = ({ isOpen, children, onClick }) => {
-  return (
+  const [backdropElement, setBackdropElement] = useState<HTMLElement | null>(
+    null
+  );
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const element = document.getElementById("backdrop-root");
+      setBackdropElement(element);
+    }
+  }, []);
+
+  if (!backdropElement) {
+    return null;
+  }
+
+  return createPortal(
     <div
       className={`${
         !isOpen
-          ? "opacity-0 pointer-events-none w-full h-full bg-transparent invisible fixed top-0 left-0 transition-all duration-[500ms]"
-          : "fixed top-0 left-0 pointer-events-auto visible w-full h-full bg-[#173D33] opacity-100 bg-opacity-25 backdrop-blur-[2px] z-500 transition-opacity duration-[500ms] px-[8px]"
+          ? "fixed top-0 left-0 opacity-0 pointer-events-none w-full h-full bg-transparent invisible transition-all duration-[500ms]"
+          : "fixed top-0 left-0 pointer-events-auto visible w-full h-full bg-[#173D33] opacity-100 bg-opacity-25 backdrop-blur-[2px] z-50 transition-opacity duration-[500ms] px-[8px]"
       }`}
       onClick={onClick}
     >
       {children}
-    </div>
+    </div>,
+    backdropElement
   );
 };
 
