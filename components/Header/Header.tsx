@@ -24,14 +24,16 @@ const Header = () => {
   return (
     <header
       className={`${
-        scrolling ? "bg-[#173D33] bg-opacity-50 backdrop-blur-[2px]" : ""
+        scrolling
+          ? "bg-[#173D33] bg-opacity-50 backdrop-blur-[2px]"
+          : ""
       } fixed left-0 right-0 mx-auto py-[10px] transition-colors duration-200`}
     >
       <div className="custom-container flex">
         <div>
           <Logo />
         </div>
-        <div className="ml-auto">
+        <div className="ml-auto flex items-center">
           <SideBar />
         </div>
       </div>
