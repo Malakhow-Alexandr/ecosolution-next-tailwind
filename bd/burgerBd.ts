@@ -8,7 +8,7 @@ export const burgerNav = [
     title: "About"
   },
   {
-    href: "#",
+    href: "#Services",
     title: "Service"
   },
   {
