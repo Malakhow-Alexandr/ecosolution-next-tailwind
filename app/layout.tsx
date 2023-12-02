@@ -3,13 +3,13 @@ import { Oswald, Fira_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 
-// export const oswald = Oswald({
-//   weight: ["400", "700"],
-//   subsets: ["latin"],
-//   variable: "--font-oswald",
-// });
+const oswald = Oswald({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-oswald"
+});
 
-export const fira = Fira_Sans({
+const fira = Fira_Sans({
   weight: ["400", "500"],
   subsets: ["latin"],
   variable: "--font-fira"
@@ -26,7 +26,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={fira.variable}>
+    <html
+      lang="en"
+      className={`${fira.variable} ${oswald.variable}`}
+    >
       <body>
         <div id="backdrop-root"></div>
         <Header />
