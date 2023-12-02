@@ -9,7 +9,7 @@ const ElectricitySection = () => {
           ELECTRICITY WE PRODUCED
           <br /> FOR ALL TIME
         </h2>
-        <VerticalLine height={48} />
+        <VerticalLine classNames="h-[48px]" />
         <p
           className="flex items-center gap-[8px] font-title font-bold text-[40px] mobile:text-[48px] text-mainElementsColor \ 
             text-center leading-[48px] "
@@ -19,7 +19,7 @@ const ElectricitySection = () => {
             kWh
           </span>
         </p>
-        <VerticalLine height={48} />
+        <VerticalLine classNames="h-[48px]" />
       </div>
     </section>
   );

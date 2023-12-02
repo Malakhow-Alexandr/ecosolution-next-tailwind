@@ -34,7 +34,7 @@ const AdvantageItem: FC<AdvantageItemProps> = ({
               {title}
             </h3>
           </div>
-          <Line marginBottom={12} />
+          <Line classNames="mb-[12px]" />
           <p className="font-text text-[14px] text-mainText tracking-[-0.56px]">
             {advantage}
           </p>

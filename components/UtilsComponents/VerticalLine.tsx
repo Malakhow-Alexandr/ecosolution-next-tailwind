@@ -1,19 +1,17 @@
 import React, { FC } from "react";
 
 interface VerticalLineProps {
-  height: number;
-  marginBottom?: number;
+  classNames?: string;
 }
 
 const VerticalLine: FC<VerticalLineProps> = ({
-  height,
-  marginBottom
+  classNames
 }) => {
   return (
     <span
       className={`block w-[1px] bg-mainElementsColor ${
-        height && `h-[${height}px]`
-      } ${marginBottom ? `mb-[${marginBottom}px] ` : ""}`}
+        classNames ? `${classNames}` : ""
+      }`}
     ></span>
   );
 };

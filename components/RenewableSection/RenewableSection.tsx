@@ -32,7 +32,7 @@ const RenewableSection = () => {
             />
           </span>
         </a>
-        <Line marginBottom={36} />
+        <Line classNames="mb-[36px]" />
         <address
           className="font-text not-italic text-[16px] tracking-[-0.64px] \
          text-mainText text-center mb-[8px]"
