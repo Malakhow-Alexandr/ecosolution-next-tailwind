@@ -1,13 +1,15 @@
 import RenewableSection from "@/components/RenewableSection/RenewableSection";
-import Hero from "@/components/Hero/Hero";
-import Team from "@/components/Team/Team";
+import HeroSection from "@/components/HeroSection/HeroSection";
+import TeamSection from "@/components/TeamSection/TeamSection";
+import MainSection from "@/components/MainSection/MainSection";
 
 export default function Home() {
   return (
     <main>
       <RenewableSection />
-      <Hero />
-      <Team />
+      <HeroSection />
+      <TeamSection />
+      <MainSection />
     </main>
   );
 }

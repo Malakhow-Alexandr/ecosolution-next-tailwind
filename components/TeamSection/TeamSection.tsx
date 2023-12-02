@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { teamBd } from "@/bd/teamBd";
 
-const Team = () => {
+const TeamSection = () => {
   return (
-    <section>
+    <section className="mb-[36px]">
       <div className="custom-container">
         <ul className="flex flex-wrap justify-center gap-[24px] mx-auto">
           {teamBd.map((unit) => (
@@ -32,4 +32,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default TeamSection;

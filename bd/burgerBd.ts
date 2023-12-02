@@ -1,35 +1,35 @@
 export const burgerNav = [
   {
-    href: "#",
-    title: "Main",
+    href: "#Main",
+    title: "Main"
+  },
+  {
+    href: "#About",
+    title: "About"
   },
   {
     href: "#",
-    title: "About",
+    title: "Service"
+  },
+  {
+    href: "#Cases",
+    title: "Cases"
   },
   {
     href: "#",
-    title: "Service",
+    title: "FAQ"
   },
   {
     href: "#",
-    title: "Cases",
+    title: "Customers"
   },
   {
     href: "#",
-    title: "FAQ",
-  },
-  {
-    href: "#",
-    title: "Customers",
-  },
-  {
-    href: "#",
-    title: "Contact Us",
-  },
+    title: "Contact Us"
+  }
 ];
 
 export const burgerSocials = [
   { href: "#", title: "facebook" },
-  { href: "#", title: "Instagram" },
+  { href: "#", title: "Instagram" }
 ];
