@@ -5,6 +5,7 @@ import MainSection from "./MainSection/MainSection";
 import ElectricitySection from "./ElectricitySection/ElectricitySection";
 import ServicesSection from "./ServicesSection/ServicesSection";
 import CasesSection from "./CasesSection/CasesSection";
+import ScrollToTop from "./ScrollToTop/ScrollToTop";
 
 export {
   RenewableSection,
@@ -13,5 +14,6 @@ export {
   MainSection,
   ElectricitySection,
   ServicesSection,
-  CasesSection
+  CasesSection,
+  ScrollToTop
 };
