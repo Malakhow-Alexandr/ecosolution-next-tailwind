@@ -9,6 +9,7 @@ import {
   ElectricitySection,
   ServicesSection,
   CasesSection,
+  ContactsSection,
   ScrollToTop
 } from "@/components";
 
@@ -16,7 +17,7 @@ export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
-    if (window.scrollY > 500) {
+    if (window.scrollY > 2000) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
@@ -41,9 +42,8 @@ export default function Home() {
       <ElectricitySection />
       <ServicesSection />
       <CasesSection />
-      <div className="custom-container relative">
-        <ScrollToTop scrollVisible={isVisible} />
-      </div>
+      <ContactsSection />
+      <ScrollToTop scrollVisible={isVisible} />
     </main>
   );
 }

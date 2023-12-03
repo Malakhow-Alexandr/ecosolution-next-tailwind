@@ -5,6 +5,7 @@ import MainSection from "./MainSection/MainSection";
 import ElectricitySection from "./ElectricitySection/ElectricitySection";
 import ServicesSection from "./ServicesSection/ServicesSection";
 import CasesSection from "./CasesSection/CasesSection";
+import ContactsSection from "./ContactsSection/ContactsSection";
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
 
 export {
@@ -15,5 +16,6 @@ export {
   ElectricitySection,
   ServicesSection,
   CasesSection,
+  ContactsSection,
   ScrollToTop
 };

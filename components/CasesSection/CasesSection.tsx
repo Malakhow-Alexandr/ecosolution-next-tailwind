@@ -2,7 +2,7 @@ import CasesSlider from "./CasesSlider/CasesSlider";
 
 const CasesSection = () => {
   return (
-    <section id="Cases">
+    <section id="Cases" className="mb-[36px]">
       <div className="custom-container">
         <div>
           <h2 className="font-title text-[28px] text-mainText leading-[28px] mb-[24px]">
