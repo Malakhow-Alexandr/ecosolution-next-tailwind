@@ -43,7 +43,9 @@ body {
    .contacts-link {
     @apply flex gap-[8px] mb-[12px]  font-text text-[20px] tracking-[-0.8px] text-mainText  items-center
    }
-
+   .accordion-icon {
+    @apply absolute top-[45%] left-[5px] translate-y-[-50%] w-[16px] h-[16px]
+   }
   
 }
 

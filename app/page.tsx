@@ -10,6 +10,7 @@ import {
   ServicesSection,
   CasesSection,
   ContactsSection,
+  FaqSection,
   ScrollToTop
 } from "@/components";
 
@@ -42,6 +43,7 @@ export default function Home() {
       <ElectricitySection />
       <ServicesSection />
       <CasesSection />
+      <FaqSection/>
       <ContactsSection />
       <ScrollToTop scrollVisible={isVisible} />
     </main>
