@@ -19,7 +19,8 @@ const BurgerNav: FC<BurgerNavProps> = ({ closeMenu }) => {
               <a
                 href={link.href}
                 onClick={closeMenu}
-                className={`flex items-center gap-[8px] font-text text-[24px] text-[] hover:text-white \
+                className={`flex items-center gap-[8px] font-text text-[24px] text-[] \
+               hover:text-white \
                 transition-colors duration-[250ms]
                 ${
                   link.title === "Main"
@@ -43,13 +44,13 @@ const BurgerNav: FC<BurgerNavProps> = ({ closeMenu }) => {
                   <InstaIcon
                     width={24}
                     height={24}
-                    className="stroke-white hover:stroke-mainElementsColor hover:scale-110 transition-all duration-200"
+                    className="burger-nav-icon"
                   />
                 ) : (
                   <FaceBookIcon
                     width={24}
                     height={24}
-                    className="stroke-white hover:stroke-mainElementsColor hover:scale-110 transition-all duration-200"
+                    className="burger-nav-icon"
                   />
                 )}
               </a>

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { contactsBd } from "@/bd/contactsBd";
 import InstagramIcon from "@/public/contacts/instagram.svg";
 import FaceBookIcon from "@/public/contacts/facebook.svg";

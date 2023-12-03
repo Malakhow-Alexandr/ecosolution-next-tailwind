@@ -6,8 +6,8 @@ import PlusIcon from "@/public/faq/plus.svg";
 
 type FaqAccordionItemProps = {
   onClick: () => void;
-  meta: string; // Замените на фактический тип мета-данных
-  title: string; // Замените на фактический тип заголовка
+  meta: string;
+  title: string;
   isOpen: boolean;
 };
 
@@ -20,7 +20,11 @@ const FaqAccordionItem: FC<FaqAccordionItemProps> = ({
   const itemRef = useRef<HTMLDivElement | null>(null);
 
   return (
-    <li className="border-t py-[16px] border-mainElementsColor">
+    <li
+      className={`border-t pt-[16px] border-mainElementsColor ${
+        isOpen ? "pb-[16px]" : ""
+      }`}
+    >
       <button
         type="button"
         className="relative w-full pl-[52px] mb-[16px] font-text text-[18px] text-left \

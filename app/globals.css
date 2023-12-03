@@ -36,13 +36,37 @@ body {
       max-width: 464px;
     }
   }
+  .button-primary {
+    @apply flex items-center  mx-auto p-[4px] pl-[16px] 
+           border-[1px] border-mainElementsColor rounded-[500px] 
+           text-mainText font-text text-[16px] tracking-[-0.64px] leading-[18px] 
+          hover:bg-mainText transition-colors duration-200
+  }
+
+  .button-secondary {
+    @apply flex justify-between items-center px-[16px] rounded-[500px]
+            font-text text-mainText text-[16px] tracking-[-0.64px] font-normal bg-mainElementsColor
+             hover:bg-mainText hover:text-mainElementsColor transition-colors duration-200
+  }
+  .button-secondary-icon {
+    @apply flex items-center justify-center w-[14px] h-[14px] bg-mainText group-hover:bg-mainElementsColor rounded-full transition-colors duration-200
+  }
+  
+  .burger-nav-icon {
+    @apply stroke-white hover:stroke-mainElementsColor hover:scale-110 transition-all duration-200
+  }
+  .primary-button {
+    @apply 
+  }
+
   .contacts-title{
     @apply font-text text-[16px] tracking-[-0.64px] mb-[8px] ;
    }
    
-   .contacts-link {
+  .contacts-link {
     @apply flex gap-[8px] mb-[12px]  font-text text-[20px] tracking-[-0.8px] text-mainText  items-center
    }
+
    .accordion-icon {
     @apply absolute top-[45%] left-[5px] translate-y-[-50%] w-[16px] h-[16px]
    }

@@ -15,10 +15,7 @@ const RenewableSection = () => {
         </p>
         <a
           href="#Cases"
-          className="flex items-center w-[141px] h-[39px] mx-auto p-[4px] pl-[16px] \
-           border-[1px] border-mainElementsColor rounded-[500px] \
-           text-mainText font-text text-[16px] tracking-[-0.64px] leading-[18px] \
-          hover:bg-mainText transition-colors duration-200 mb-[24px] group"
+          className="button-primary mb-[24px] w-[141px] h-[39px] group"
         >
           <span className="group-hover:text-mainElementsColor transition-colors duration-200">
             Learn more
