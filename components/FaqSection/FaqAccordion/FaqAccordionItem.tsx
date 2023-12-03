@@ -20,12 +20,18 @@ const FaqAccordionItem: FC<FaqAccordionItemProps> = ({
   const itemRef = useRef<HTMLDivElement | null>(null);
 
   return (
-    <li className="border-t border-b last:border-b-0 py-[16px] border-mainElementsColor">
+    <li className="border-t py-[16px] border-mainElementsColor">
       <button
         type="button"
-        className="relative w-full pl-[52px] font-text text-[18px] text-left tracking-[-0.72.px] cursor-pointer"
+        className="relative w-full pl-[52px] mb-[16px] font-text text-[18px] text-left \
+         tracking-[-0.72.px] cursor-pointer"
         onClick={() => onClick()}
-      >{isOpen ? <MinusIcon className="accordion-icon stroke-mainText"/>: <PlusIcon className="accordion-icon stroke-mainElementsColor"/>}
+      >
+        {isOpen ? (
+          <MinusIcon className="accordion-icon stroke-mainText" />
+        ) : (
+          <PlusIcon className="accordion-icon stroke-mainElementsColor" />
+        )}
         {title}
       </button>
       <div
@@ -39,7 +45,7 @@ const FaqAccordionItem: FC<FaqAccordionItemProps> = ({
             : { height: "0px" }
         }
       >
-        <div className="mt-[16px]" ref={itemRef}>
+        <div className="" ref={itemRef}>
           <p className="block pl-[52px]">{meta}</p>
         </div>
       </div>

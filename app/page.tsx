@@ -4,10 +4,8 @@ import { useState, useEffect } from "react";
 import {
   RenewableSection,
   HeroSection,
-  TeamSection,
   MainSection,
   ElectricitySection,
-  ServicesSection,
   CasesSection,
   ContactsSection,
   FaqSection,
@@ -38,12 +36,10 @@ export default function Home() {
     <main>
       <RenewableSection />
       <HeroSection />
-      <TeamSection />
       <MainSection />
       <ElectricitySection />
-      <ServicesSection />
       <CasesSection />
-      <FaqSection/>
+      <FaqSection />
       <ContactsSection />
       <ScrollToTop scrollVisible={isVisible} />
     </main>

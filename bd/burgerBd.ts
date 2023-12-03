@@ -7,10 +7,7 @@ export const burgerNav = [
     href: "#About",
     title: "About"
   },
-  {
-    href: "#Services",
-    title: "Service"
-  },
+
   {
     href: "#Cases",
     title: "Cases"
@@ -18,10 +15,6 @@ export const burgerNav = [
   {
     href: "#FAQ",
     title: "FAQ"
-  },
-  {
-    href: "#Customers",
-    title: "Customers"
   },
   {
     href: "#Contacts",

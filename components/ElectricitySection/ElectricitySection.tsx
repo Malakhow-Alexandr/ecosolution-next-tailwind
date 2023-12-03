@@ -15,11 +15,10 @@ const ElectricitySection = () => {
             text-center leading-[48px] "
         >
           1.134.147.814
-          <span className="text-mainText text-[20px] mobile:text-[24px] leading-[24px]">
+          <span className="text-mainText font-normal text-[20px] mobile:text-[24px] leading-[24px]">
             kWh
           </span>
         </p>
-        <VerticalLine classNames="h-[48px]" />
       </div>
     </section>
   );
