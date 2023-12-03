@@ -9,7 +9,6 @@ import QualityIcon from "@/public/advantages/Openness.svg"
 
 export interface AdvantageItemProps {
   advantage: string;
-  icon: ImageData;
   picture: ImageData | null;
   title: string;
 }
