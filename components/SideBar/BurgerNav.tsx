@@ -21,7 +21,11 @@ const BurgerNav: FC<BurgerNavProps> = ({ closeMenu }) => {
                 onClick={closeMenu}
                 className={`flex items-center gap-[8px] font-text text-[24px] text-[] hover:text-white \
                 transition-colors duration-[250ms]
-                ${link.title === "Main" ? "text-mainElementsColor" : "text-[#ffffff] text-opacity-25"}`}
+                ${
+                  link.title === "Main"
+                    ? "text-mainElementsColor"
+                    : "text-[#ffffff] text-opacity-25"
+                }`}
               >
                 {link.title}
                 <GoArrowUpRight className="w-[16px] h-[16px]" />
@@ -36,20 +40,16 @@ const BurgerNav: FC<BurgerNavProps> = ({ closeMenu }) => {
             <li key={link.title}>
               <a href={link.href} target="_blank">
                 {link.title === "Instagram" ? (
-                  <Image
-                    src={InstaIcon}
-                    alt="this is instagram icon"
+                  <InstaIcon
                     width={24}
                     height={24}
-                    className="hover:scale-110 transition-transform duration-200"
+                    className="stroke-white hover:stroke-mainElementsColor hover:scale-110 transition-all duration-200"
                   />
                 ) : (
-                  <Image
-                    src={FaceBookIcon}
-                    alt="this is instagram icon"
+                  <FaceBookIcon
                     width={24}
                     height={24}
-                    className="hover:scale-110 transition-transform duration-200"
+                    className="stroke-white hover:stroke-mainElementsColor hover:scale-110 transition-all duration-200"
                   />
                 )}
               </a>

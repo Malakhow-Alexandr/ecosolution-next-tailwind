@@ -2,6 +2,10 @@ import { FC } from "react";
 import { ImageData } from "@/types/types";
 import Image from "next/image";
 import Line from "@/components/UtilsComponents/Line";
+import OpennesIcon from "@/public/advantages/Openness.svg"
+import ResponsibilityIcon from "@/public/advantages/Responsibility.svg"
+import InnovationIcon from "@/public/advantages/Innovation.svg"
+import QualityIcon from "@/public/advantages/Openness.svg"
 
 export interface AdvantageItemProps {
   advantage: string;
@@ -12,10 +16,10 @@ export interface AdvantageItemProps {
 
 const AdvantageItem: FC<AdvantageItemProps> = ({
   advantage,
-  icon,
   picture,
   title
 }) => {
+
   return (
     <>
       {!picture ? (
@@ -23,13 +27,11 @@ const AdvantageItem: FC<AdvantageItemProps> = ({
           className="h-[197px] pt-[17px] px-[12px] pb-[5px] \
          bg-[#EAEDF1]"
         >
-          <div className="flex gap-[8px] mb-[33px]">
-            <Image
-              src={icon.src}
-              alt="This is Advantage Icon"
-              width={16}
-              height={16}
-            />
+          <div className="flex gap-[8px] items-center mb-[33px]">
+            {title === "OPENNESS" && <OpennesIcon/>}
+            {title === "RESPONSIBILITY" && <ResponsibilityIcon/>}
+            {title === "INNOVATION" && <InnovationIcon/>}
+            {title === "QUALITY" && <QualityIcon className="w-[16px] h-[16px]"/>}
             <h3 className="font-title text-[16px] leading-[24px] text-mainText ">
               {title}
             </h3>

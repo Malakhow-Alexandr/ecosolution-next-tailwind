@@ -6,6 +6,7 @@ export const contactsBd = {
   email: "office@ecosolution.com",
   address: `79005, Ukraine, Lvivstreet.
   Shota Rustaveli, 7`,
+  addressLink: "#",
   instagramLink: "#",
   faceBookLink: "#"
 };

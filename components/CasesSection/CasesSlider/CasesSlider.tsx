@@ -6,8 +6,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { GoArrowUpRight } from "react-icons/go";
-import { HiArrowSmallLeft } from "react-icons/hi2";
-import { HiArrowSmallRight } from "react-icons/hi2";
+import ArrowRight from "@/public/cases/arrow-right.svg"
+import ArrowLeft from "@/public/cases/arrow-left.svg"
 import { sliderItemsBd } from "@/bd/sliderBd";
 import Line from "@/components/UtilsComponents/Line";
 
@@ -19,13 +19,13 @@ const NextArrow = (props: any) => {
        flex items-center justify-center \
         border border-mainText rounded-full \
         text-mainText hover:text-mainElementsColor hover:border-mainElementsColor \ 
-        transition-colors duration-200"
+        transition-colors duration-200 group"
       aria-hidden="true"
       aria-disabled={true}
       onClick={onClick}
       type="button"
     >
-      <HiArrowSmallRight className="w-[36px] h-[36px]" />
+      <ArrowRight className="w-[36px] h-[36px] stroke-mainText group-hover:stroke-mainElementsColor"/>
     </button>
   );
 };
@@ -38,13 +38,13 @@ const PrevArrow = (props: any) => {
        flex items-center justify-center \
       border border-mainText rounded-full \
         text-mainText hover:text-mainElementsColor hover:border-mainElementsColor \ 
-        transition-colors duration-200"
+        transition-colors duration-200 group"
       aria-hidden="true"
       aria-disabled={true}
       onClick={onClick}
       type="button"
     >
-      <HiArrowSmallLeft className="w-[36px] h-[36px]" />
+      <ArrowLeft className="w-[36px] h-[36px] stroke-mainText group-hover:stroke-mainElementsColor" />
     </button>
   );
 };

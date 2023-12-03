@@ -12,6 +12,7 @@ body {
   .no-scroll {
     @apply overflow-hidden;
   }
+  
 
   .custom-container {
     @apply max-w-full tablet:px-[20px] px-[8px] mx-auto tablet:w-[768px]  desktop:w-[1280px];
@@ -35,7 +36,15 @@ body {
       max-width: 464px;
     }
   }
- 
+  .contacts-title{
+    @apply font-text text-[16px] tracking-[-0.64px] mb-[8px] ;
+   }
+   
+   .contacts-link {
+    @apply flex gap-[8px] mb-[12px]  font-text text-[20px] tracking-[-0.8px] text-mainText  items-center
+   }
+
+  
 }
 
 
