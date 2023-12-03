@@ -18,9 +18,11 @@ const RenewableSection = () => {
           className="flex items-center w-[141px] h-[39px] mx-auto p-[4px] pl-[16px] \
            border-[1px] border-mainElementsColor rounded-[500px] \
            text-mainText font-text text-[16px] tracking-[-0.64px] leading-[18px] \
-          hover:scale-110 transition-transform duration-200 mb-[24px]"
+          hover:bg-mainText transition-colors duration-200 mb-[24px] group"
         >
-          Learn more
+          <span className="group-hover:text-mainElementsColor transition-colors duration-200">
+            Learn more
+          </span>
           <span
             className="flex w-[32px] ml-auto h-[32px] rounded-full \
            bg-mainElementsColor items-center justify-center"

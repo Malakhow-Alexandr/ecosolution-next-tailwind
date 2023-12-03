@@ -19,7 +19,9 @@ const BurgerNav: FC<BurgerNavProps> = ({ closeMenu }) => {
               <a
                 href={link.href}
                 onClick={closeMenu}
-                className="flex items-center gap-[8px] font-text text-[24px] text-white hover:text-mainElementsColor transition-colors duration-[250ms]"
+                className={`flex items-center gap-[8px] font-text text-[24px] text-[] hover:text-white \
+                transition-colors duration-[250ms]
+                ${link.title === "Main" ? "text-mainElementsColor" : "text-[#ffffff] text-opacity-25"}`}
               >
                 {link.title}
                 <GoArrowUpRight className="w-[16px] h-[16px]" />

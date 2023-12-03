@@ -35,4 +35,13 @@ body {
       max-width: 464px;
     }
   }
+ 
+}
+
+
+.slick-list{
+  margin: 0 -5px;
+}
+.slick-slide{
+  padding: 0 5px
 }

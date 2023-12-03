@@ -20,7 +20,7 @@ const ScrollToTop: FC<Props> = ({ scrollVisible }) => {
         onClick={scrollToTop}
         className={`fixed bottom-[18px] right-[18px] desktop:right-[16.7%] flex items-center justify-center \ 
         w-[32px] h-[32px] rounded-full bg-mainElementsColor text-mainText cursor-pointer \ 
-        hover:scale-110 active:bg-mainText active:text-mainElementsColor \ 
+        hover:scale-110 hover:bg-mainText hover:text-mainElementsColor \ 
         transition-all \
         ${
           scrollVisible

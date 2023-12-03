@@ -112,31 +112,35 @@ const CasesSlider: FC = () => {
                 alt="This is a photo of our project location!"
                 width={596}
                 height={296}
-                className="mb-[24px]"
+                className=""
               />
-              <div className="px-[12px]">
+              <div className="px-[12px] pt-[14px] pb-[12px] bg-[#EAEDF1]">
                 <div className="">
                   <a
                     href={sliderItem.mapLink}
-                    className="flex items-center"
+                    className="flex items-center slider-icon-linc group"
                   >
                     <span className="block w-[175px] font-text text-mainText text-[18px] tracking-[-0.72px]">
                       {sliderItem.mapLinkTitle}
                     </span>
                     <span
-                      className="flex items-center justify-center w-[60px] h-[60px] ml-auto  \
-                   bg-mainElementsColor rounded-full "
+                      className="icon-link flex items-center justify-center w-[60px] h-[60px] ml-auto  \
+                   bg-mainElementsColor rounded-full \
+                   group-hover:bg-mainText transition-colors duration-200"
                     >
-                      <GoArrowUpRight className="w-[24px] h-[24px] text-[#173D33]" />
+                      <GoArrowUpRight
+                        className="w-[24px] h-[24px] text-[#173D33] group-hover:text-mainElementsColor \
+                       transition-colors duration-200"
+                      />
                     </span>
                   </a>
                 </div>
                 <Line
                   classNames={` ${
-                    sliderItem.id === 2 ||
+                    sliderItem.id === 1 ||
                     sliderItem.id === 4
-                      ? "mt-[32px]"
-                      : "mt-[12px]"
+                      ? "mt-[14px]"
+                      : "mt-[34px]"
                   } mb-[12px]`}
                 />
                 <div className="flex justify-between">
