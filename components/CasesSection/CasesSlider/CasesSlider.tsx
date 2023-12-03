@@ -1,57 +1,17 @@
 "use client";
-
 import React, { FC, useRef, useState } from "react";
 import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { GoArrowUpRight } from "react-icons/go";
-import ArrowRight from "@/public/cases/arrow-right.svg"
-import ArrowLeft from "@/public/cases/arrow-left.svg"
+import { NextArrow, PrevArrow } from "./SliderArrows";
 import { sliderItemsBd } from "@/bd/sliderBd";
-import Line from "@/components/UtilsComponents/Line";
-
-const NextArrow = (props: any) => {
-  const { onClick } = props;
-  return (
-    <button
-      className="absolute top-0 right-0 w-[66px] h-[66px] \
-       flex items-center justify-center \
-        border border-mainText rounded-full \
-        text-mainText hover:text-mainElementsColor hover:border-mainElementsColor \ 
-        transition-colors duration-200 group"
-      aria-hidden="true"
-      aria-disabled={true}
-      onClick={onClick}
-      type="button"
-    >
-      <ArrowRight className="w-[36px] h-[36px] stroke-mainText group-hover:stroke-mainElementsColor"/>
-    </button>
-  );
-};
-
-const PrevArrow = (props: any) => {
-  const { onClick } = props;
-  return (
-    <button
-      className="absolute top-0 right-[78px] w-[66px] h-[66px] \
-       flex items-center justify-center \
-      border border-mainText rounded-full \
-        text-mainText hover:text-mainElementsColor hover:border-mainElementsColor \ 
-        transition-colors duration-200 group"
-      aria-hidden="true"
-      aria-disabled={true}
-      onClick={onClick}
-      type="button"
-    >
-      <ArrowLeft className="w-[36px] h-[36px] stroke-mainText group-hover:stroke-mainElementsColor" />
-    </button>
-  );
-};
+import SliderInfo from "./SliderInfo";
+import SliderCardMeta from "./SliderCardMeta";
 
 const CasesSlider: FC = () => {
-  const [curentSlide, setCurrentSlide] = useState(1);
-  const CasesSlider = useRef<Slider | null>(null);
+  const [currentSlide, setCurrentSlide] = useState(1);
+  const CasesSliderRef = useRef<Slider | null>(null);
 
   const settings = {
     dots: false,
@@ -90,16 +50,12 @@ const CasesSlider: FC = () => {
   };
   return (
     <div className="relative max-w-[400px] mx-auto">
-      <div className="absolute top-[42px] left-0">
-        <p className="font-text text-[28px] font-[300] tracking-[-1.12px] ">
-          0{curentSlide}
-          <span> </span>
-          <span className="text-[#173d33] text-opacity-25">
-            /0{sliderItemsBd.length}
-          </span>
-        </p>
-      </div>
+      <SliderInfo
+        bdLength={sliderItemsBd.length}
+        currentSlide={currentSlide}
+      />
       <Slider
+        ref={(slider) => (CasesSliderRef.current = slider)}
         className="pt-[100px]
             mx-auto"
         {...settings}
@@ -114,44 +70,13 @@ const CasesSlider: FC = () => {
                 height={296}
                 className=""
               />
-              <div className="px-[12px] pt-[14px] pb-[12px] bg-[#EAEDF1]">
-                <div className="">
-                  <a
-                    href={sliderItem.mapLink}
-                    className="flex items-center slider-icon-linc group"
-                  >
-                    <span className="block w-[175px] font-text text-mainText text-[18px] tracking-[-0.72px]">
-                      {sliderItem.mapLinkTitle}
-                    </span>
-                    <span
-                      className="icon-link flex items-center justify-center w-[60px] h-[60px] ml-auto  \
-                   bg-mainElementsColor rounded-full \
-                   group-hover:bg-mainText transition-colors duration-200"
-                    >
-                      <GoArrowUpRight
-                        className="w-[24px] h-[24px] text-[#173D33] group-hover:text-mainElementsColor \
-                       transition-colors duration-200"
-                      />
-                    </span>
-                  </a>
-                </div>
-                <Line
-                  classNames={` ${
-                    sliderItem.id === 1 ||
-                    sliderItem.id === 4
-                      ? "mt-[14px]"
-                      : "mt-[34px]"
-                  } mb-[12px]`}
-                />
-                <div className="flex justify-between">
-                  <p className="font-text text-mainText text-[14px] tracking-[-0.56px]">
-                    {sliderItem.title}
-                  </p>
-                  <p className="font-text text-mainText text-[14px] tracking-[-0.56px]">
-                    {sliderItem.expirationDate}
-                  </p>
-                </div>
-              </div>
+              <SliderCardMeta
+                expirationDate={sliderItem.expirationDate}
+                id={sliderItem.id}
+                mapLink={sliderItem.mapLink}
+                mapLinkTitle={sliderItem.mapLinkTitle}
+                title={sliderItem.title}
+              />
             </div>
           );
         })}
