@@ -1,9 +1,8 @@
 import { contactsBd } from "@/bd/contactsBd";
-import InstagramIcon from "@/public/contacts/instagram.svg";
-import FaceBookIcon from "@/public/contacts/facebook.svg";
 import PhoneIcon from "@/public/contacts/call.svg";
 import MapIcon from "@/public/contacts/map.svg";
 import EmailIcon from "@/public/contacts/sms.svg";
+import ContactsSocials from "./ContactsSocials";
 
 const {
   address,
@@ -19,7 +18,7 @@ const {
 
 const ContactsSectionContacts = () => {
   return (
-    <section className="flex flex-col">
+    <section className="flex flex-col mb-[36px]">
       <h4 className="contacts-title">Phone:</h4>
       <a
         href={`"callto:${phone1Call}"`}
@@ -72,21 +71,14 @@ const ContactsSectionContacts = () => {
         </a>
       </address>
 
-      <h4 className="contacts-title">Social Networks:</h4>
-      <div className="flex gap-[32px]">
-        <a href={instagramLink} className="group">
-          <InstagramIcon
-            className="stroke-mainText group-hover:stroke-mainElementsColor \
-           transition-colors duration-200"
-          />
-        </a>
-        <a href={faceBookLink} className="group">
-          <FaceBookIcon
-            className="stroke-mainText group-hover:stroke-mainElementsColor \
-           transition-colors duration-200"
-          />
-        </a>
-      </div>
+      <h4 className="contacts-title mb-[20px]">
+        Social Networks:
+      </h4>
+      <ContactsSocials
+        faceBookLink={faceBookLink}
+        instagramLink={instagramLink}
+        containerClassNames="flex gap-[32px]"
+      />
     </section>
   );
 };

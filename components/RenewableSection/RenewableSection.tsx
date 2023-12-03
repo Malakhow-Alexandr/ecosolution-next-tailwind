@@ -1,5 +1,6 @@
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Line from "../UtilsComponents/Line";
+import RenewableContacts from "./RenewableContacts";
 
 const RenewableSection = () => {
   return (
@@ -32,20 +33,7 @@ const RenewableSection = () => {
           </span>
         </a>
         <Line classNames="mb-[36px]" />
-        <address
-          className="font-text not-italic text-[16px] tracking-[-0.64px] \
-         text-mainText text-center mb-[8px]"
-        >
-          79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
-        </address>
-        <div className="flex items-center justify-center">
-          <a
-            href="mailto:office@ecosolution.com"
-            className="font-text text-[16px] tracking-[-0.64px] text-mainText"
-          >
-            office@ecosolution.com
-          </a>
-        </div>
+        <RenewableContacts />
       </div>
     </section>
   );
