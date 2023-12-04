@@ -12,7 +12,7 @@ const RenewableContacts = () => {
 
       <a
         href="mailto:office@ecosolution.com"
-        className="block w-[163px] mx-auto font-text text-[16px] tracking-[-0.64px] text-mainText"
+        className="block w-[163px] mx-auto desktop:ml-[493px] font-text text-[16px] tracking-[-0.64px] text-mainText"
       >
         office@ecosolution.com
       </a>

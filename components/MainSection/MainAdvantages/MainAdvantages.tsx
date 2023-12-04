@@ -4,7 +4,7 @@ import AdvantageItem from "./AdvantageItem";
 
 const MainAdvantages = () => {
   return (
-    <ul className="grid grid-cols-2 tablet:grid-cols-4 gap-[24px]">
+    <ul className="grid grid-cols-2 tablet:grid-cols-4 gap-[24px] desktop:gap-[44px]">
       {advantagesBd.map(
         ({ title, advantage, picture }, index) => (
           <AdvantageItem

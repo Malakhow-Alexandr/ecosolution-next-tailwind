@@ -7,7 +7,8 @@ interface FaqTitleProps {
 const FaqTitle: FC<FaqTitleProps> = ({ styles }) => {
   return (
     <h2
-      className={`font-title text-[28px] tablet:text-[36px] text-mainText tablet:leading-[36px] leading-[28px] mb-[24px] ${
+      className={`font-title text-[28px] tablet:text-[36px] desktop:text-[48px] text-mainText leading-[28px] \
+      tablet:leading-[36px] desktop:leading-[48px] mb-[24px] ${
         styles ? `${styles}` : ""
       }`}
     >

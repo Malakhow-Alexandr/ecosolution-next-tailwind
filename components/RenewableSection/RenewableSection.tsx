@@ -4,13 +4,16 @@ import RenewableContacts from "./RenewableContacts";
 
 const RenewableSection = () => {
   return (
-    <section className="pt-[250px] mb-[36px] tablet:mb-[40px]">
+    <section className="pt-[250px] mb-[36px] tablet:mb-[40px] desktop:mb-[36px]">
       <div className="custom-container">
         <div className="tablet:flex tablet:justify-between">
-          <h1 className="tablet:w-[300px] mb-[24px] font-title font-normal text-[36px] tablet:text-[48px] text-mainText  leading-[36px] tablet:leading-[48px]">
+          <h1
+            className="tablet:w-[300px] desktop:w-[485px] mb-[24px] font-title font-normal text-[36px] tablet:text-[48px] \
+          desktop:text-[64px] text-mainText  leading-[36px] tablet:leading-[48px] desktop:leading-[64px]"
+          >
             RENEWABLE ENERGY FOR ANY TASK
           </h1>
-          <div className="tablet:w-[342px] tablet:flex tablet:flex-col items-start">
+          <div className="tablet:w-[342px] desktop:w-[362px] desktop:mr-[96px] tablet:flex tablet:flex-col items-start">
             <p className="font-text text-mainText text-[16px] tracking-[-0.64px] mb-[24px]">
               Development and implementation of renewable
               non-polluting energy sources, generating power

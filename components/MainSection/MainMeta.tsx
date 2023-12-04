@@ -4,13 +4,14 @@ const MainMeta = () => {
   return (
     <div className="mb-[36px] tablet:mb-[100px] tablet:flex tablet:justify-between">
       <h2
-        className="tablet:w-[272px] tablet:block font-title text-[28px] tablet:text-[36px] text-mainText leading-[28px] tablet:leading-[36px] \
-       mb-[24px] tablet:mb-0"
+        className="tablet:w-[272px] desktop:w-[365px] tablet:block font-title text-[28px] tablet:text-[36px] desktop:text-[48px] text-mainText \
+         leading-[28px] tablet:leading-[36px] desktop:leading-[48px] \
+         mb-[24px] tablet:mb-0"
       >
         MAIN VALUES OF OUR COMPANY
       </h2>
       <p
-        className="tablet:block tablet:w-[353px] tablet:pl-[11px] tablet:border-l tablet:border-mainElementsColor \
+        className="tablet:block tablet:w-[353px] desktop:w-[620px] tablet:pl-[11px] desktop:pl-[160px] tablet:border-l tablet:border-mainElementsColor \
        font-text text-mainText text-[16px] tracking-[-0.64px]"
       >
         EcoSolution envisions a world where sustainable

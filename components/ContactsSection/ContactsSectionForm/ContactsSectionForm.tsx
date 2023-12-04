@@ -45,7 +45,8 @@ const ContactsSectionForm = () => {
       >
         {({ errors, touched }) => (
           <Form
-            className="flex flex-col tablet:w-[342px] px-[12px] py-[36px] bg-[#EAEDF1]"
+            className="flex flex-col tablet:w-[342px] desktop:w-[596px] px-[12px] py-[36px] \
+             desktop:p-[48px] bg-[#EAEDF1] "
             autoComplete="false"
           >
             <label className="form-label">

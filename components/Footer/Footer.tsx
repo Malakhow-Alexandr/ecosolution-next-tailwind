@@ -13,7 +13,7 @@ const Footer = () => {
           <ContactsSocials
             faceBookLink="#"
             instagramLink="#"
-            containerClassNames="flex  gap-[8px] mt-[24px] mb-[24px] mx-auto tablet:mr-auto tablet:ml-[100px] w-[56px]"
+            containerClassNames="flex  gap-[8px] mt-[24px] mb-[24px] mx-auto tablet:mr-auto tablet:ml-[100px] desktop:ml-[512px] w-[56px]"
           />
         </div>
         <RenewableContacts />

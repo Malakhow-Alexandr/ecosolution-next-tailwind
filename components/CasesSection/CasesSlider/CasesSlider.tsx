@@ -60,7 +60,7 @@ const CasesSlider: FC = () => {
       />
       <Slider
         ref={(slider) => (CasesSliderRef.current = slider)}
-        className="pt-[100px]
+        className="pt-[100px] desktop:pt-[206px]
             mx-auto"
         {...settings}
       >
@@ -73,7 +73,7 @@ const CasesSlider: FC = () => {
                   alt="This is a photo of our project location!"
                   width={596}
                   height={296}
-                  className=""
+                  className="w-[100%]"
                 />
                 <SliderCardMeta
                   expirationDate={sliderItem.expirationDate}

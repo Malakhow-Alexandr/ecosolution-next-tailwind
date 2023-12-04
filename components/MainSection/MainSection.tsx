@@ -5,7 +5,7 @@ const MainSection = () => {
   return (
     <section
       id="Main"
-      className="mb-[36px] tablet:mb-[100px]"
+      className="mb-[36px] tablet:mb-[100px] desktop:mb-[120px]"
     >
       <div className="custom-container">
         <MainMeta />

@@ -1,11 +1,12 @@
 import Image from "next/image";
 import HeroBannerMobile from "@/public/hero/heroBannerMobile.png";
 import HeroBannerTablet from "@/public/hero/HeroBannerTablet.png";
+import HeroBannerDesktop from "@/public/hero/HeroBunnerDesktop.png";
 
 const HeroSection = () => {
   return (
     <section
-      className="mb-[36px] tablet:mb-[100px]"
+      className="mb-[36px] tablet:mb-[100px] desktop:mb-[120px]"
       id="About"
     >
       <div className="custom-container">
@@ -22,6 +23,13 @@ const HeroSection = () => {
           width={728}
           height={348}
           className="mx-auto hidden tablet:block desktop:hidden"
+        />
+        <Image
+          src={HeroBannerDesktop}
+          alt="drawn wind power plants"
+          width={1240}
+          height={524}
+          className="mx-auto hidden desktop:block "
         />
       </div>
     </section>

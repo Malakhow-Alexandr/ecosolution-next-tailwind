@@ -58,6 +58,10 @@ body {
     @apply stroke-white hover:stroke-mainElementsColor hover:scale-110 transition-all duration-200
   }
 
+  .advantagesIcon {
+    @apply desktop:scale-[1.2]
+  }
+
   .accordion-icon {
     @apply absolute top-[45%] left-[5px] translate-y-[-50%] w-[16px] h-[16px]
    }

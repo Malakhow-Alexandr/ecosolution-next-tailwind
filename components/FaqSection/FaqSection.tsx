@@ -8,13 +8,16 @@ const FaqSection = () => {
       id="FAQ"
       className="mb-[36px] tablet:mb-[100px]"
     >
-      <div className="custom-container tablet:flex tablet:gap-[24px]">
+      <div className="custom-container tablet:flex tablet:gap-[24px] desktop:gap-[185px]">
         <FaqTitle styles="tablet:hidden" />
         <FaqAccordion />
         <div className="tablet:flex flex-col justify-between">
           <FaqTitle />
           <div>
-            <p className="mb-[12px] font-text text-[18px] text-mainText text-center tracking-[-0.72px]">
+            <p
+              className="mb-[12px] font-text text-[18px] desktop:text-[24px] \
+             text-mainText text-center tracking-[-0.72px] desktop:tracking-[-0.96px]"
+            >
               Didn&apos;t find the answer to your question?
             </p>
             <SecondaryButton

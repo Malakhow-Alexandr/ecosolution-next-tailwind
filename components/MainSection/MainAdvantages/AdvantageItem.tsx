@@ -24,24 +24,30 @@ const AdvantageItem: FC<AdvantageItemProps> = ({
     <>
       {!picture ? (
         <li
-          className="h-[197px] desktop:h-[339px] pt-[17px] px-[12px] pb-[5px] \
+          className="h-[197px] desktop:h-[339px] pt-[17px] desktop:pt-[48px] px-[12px] pb-[5px] \
          bg-[#EAEDF1] "
         >
-          <div className="flex gap-[8px] items-center mb-[33px] tablet:mb-[36px]">
-            {title === "OPENNESS" && <OpennesIcon />}
-            {title === "RESPONSIBILITY" && (
-              <ResponsibilityIcon />
-            )}
-            {title === "INNOVATION" && <InnovationIcon />}
-            {title === "QUALITY" && (
-              <QualityIcon className="w-[16px] h-[16px]" />
-            )}
-            <h3 className="font-title text-[16px] tablet:text-[18px] leading-[24px] text-mainText ">
+          <div className="flex gap-[8px] items-center mb-[33px] tablet:mb-[36px] desktop:mb-[94px]">
+            <div className="flex items-center justify-center">
+              {title === "OPENNESS" && (
+                <OpennesIcon className="advantagesIcon" />
+              )}
+              {title === "RESPONSIBILITY" && (
+                <ResponsibilityIcon className="advantagesIcon" />
+              )}
+              {title === "INNOVATION" && (
+                <InnovationIcon className="advantagesIcon" />
+              )}
+              {title === "QUALITY" && (
+                <QualityIcon className="advantagesIcon" />
+              )}
+            </div>
+            <h3 className="font-title text-[16px] tablet:text-[18px] desktop:text-[32px] leading-[24px] text-mainText ">
               {title}
             </h3>
           </div>
           <Line classNames="mb-[12px]" />
-          <p className="font-text text-[14px] text-mainText tracking-[-0.56px]">
+          <p className="font-text text-[14px] desktop:text-[16px] text-mainText tracking-[-0.56px] desktop:tracking-[-0.64px]">
             {advantage}
           </p>
         </li>

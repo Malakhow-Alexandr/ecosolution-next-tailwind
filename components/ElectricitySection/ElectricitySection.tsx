@@ -9,19 +9,23 @@ const ElectricitySection = () => {
     >
       <div className="custom-container flex flex-col gap-[24px] items-center">
         <h2
-          className=" font-title text-[24px] tablet:text-[36px] mobile:text-[28px] text-mainText text-center \
-         leading-[28px] tablet:leading-[36px]"
+          className=" font-title text-[24px] tablet:text-[36px] desktop:text-[48px] mobile:text-[28px] text-mainText text-center \
+         leading-[28px] tablet:leading-[36px] desktop:leading-[48px]"
         >
           ELECTRICITY WE PRODUCED
           <br /> FOR ALL TIME
         </h2>
         <VerticalLine classNames="h-[48px] tablet:h-[87px]" />
         <p
-          className="flex items-center gap-[8px] font-title font-bold text-[40px] tablet:text-[100px] mobile:text-[48px] text-mainElementsColor \ 
-            text-center leading-[48px] tablet:leading-[100px]"
+          className="flex items-center gap-[8px] font-title font-bold text-[40px] mobile:text-[48px] tablet:text-[100px] \
+           desktop:text-[164px] text-mainElementsColor text-center \
+          leading-[48px] tablet:leading-[100px] desktop:leading-[164px]"
         >
           1.134.147.814
-          <span className="text-mainText font-normal text-[20px] tablet:text-[28px] mobile:text-[24px] leading-[24px] tablet:leading-[48px]">
+          <span
+            className="text-mainText font-normal text-[20px] mobile:text-[24px] tablet:text-[28px] desktop:text-[48px]\ 
+          leading-[24px] tablet:leading-[28px] desktop:leading-[48px]"
+          >
             kWh
           </span>
         </p>
