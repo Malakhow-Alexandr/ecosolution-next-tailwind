@@ -1,15 +1,15 @@
 import Image from "next/image";
-import HeroBanner from "@/public/hero/heroBanner.png";
+import HeroBannerMobile from "@/public/hero/heroBannerMobile.png";
 
 const HeroSection = () => {
   return (
     <section className="mb-[36px]" id="About">
       <div className="custom-container">
         <Image
-          src={HeroBanner}
+          src={HeroBannerMobile}
           alt="drawn wind power plants"
-          width={1200}
-          height={524}
+          width={320}
+          height={200}
           className="mx-auto mb-[36px]"
         />
         <h2 className="capitalize font-title text-[28px] text-mainText leading-[28px] mb-[24px]">

@@ -16,7 +16,7 @@ body {
   
 
   .custom-container {
-    @apply max-w-full tablet:px-[20px] px-[8px] mx-auto tablet:w-[768px]  desktop:w-[1280px];
+    @apply max-w-full tablet:px-[20px] px-[8px] mobile:px-[20px] mx-auto tablet:w-[768px]  desktop:w-[1280px];
 
     @media (max-width: 479px) {
       max-width: 100%;
@@ -49,6 +49,7 @@ body {
             font-text text-mainText text-[16px] tracking-[-0.64px] font-normal bg-mainElementsColor
              hover:bg-mainText hover:text-mainElementsColor transition-colors duration-200
   }
+
   .button-secondary-icon {
     @apply flex items-center justify-center w-[14px] h-[14px] bg-mainText group-hover:bg-mainElementsColor rounded-full transition-colors duration-200
   }
@@ -56,9 +57,10 @@ body {
   .burger-nav-icon {
     @apply stroke-white hover:stroke-mainElementsColor hover:scale-110 transition-all duration-200
   }
-  .primary-button {
-    @apply 
-  }
+
+  .accordion-icon {
+    @apply absolute top-[45%] left-[5px] translate-y-[-50%] w-[16px] h-[16px]
+   }
 
   .contacts-title{
     @apply font-text text-[16px] tracking-[-0.64px] mb-[8px] ;
@@ -68,10 +70,13 @@ body {
     @apply flex gap-[8px] mb-[12px]  font-text text-[20px] tracking-[-0.8px] text-mainText  items-center
    }
 
-   .accordion-icon {
-    @apply absolute top-[45%] left-[5px] translate-y-[-50%] w-[16px] h-[16px]
-   }
-  
+  .form-label {
+    @apply relative flex flex-col font-text text-[16px] tracking-[-0.64] mb-[28px]
+  } 
+
+  .form-input {
+    @apply mt-[8px] outline-none border-b border-mainElementsColor bg-transparent h-[31px] 
+  }
 }
 
 

@@ -8,6 +8,7 @@ import {
 import { toast } from "react-toastify";
 import { ContactsFormSchema } from "./FormSchema";
 import CustomErrorMessage from "./CustomErrorMessage";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 interface FormValues {
   fullName: string;
@@ -42,53 +43,115 @@ const ContactsSectionForm = () => {
         validationSchema={ContactsFormSchema}
         onSubmit={handleSubmit}
       >
-        <Form>
-          <label className="relative">
-            * Full name:
-            <Field type="text" name="fullName" />
-            <ErrorMessage name="fullName">
-              {(msg) => (
-                <CustomErrorMessage>
-                  {msg}
-                </CustomErrorMessage>
-              )}
-            </ErrorMessage>
-          </label>
-          <label className="relative">
-            * E-mail:
-            <Field type="email" name="email" />
-            <ErrorMessage name="email">
-              {(msg) => (
-                <CustomErrorMessage>
-                  {msg}
-                </CustomErrorMessage>
-              )}
-            </ErrorMessage>
-          </label>
-          <label className="relative">
-            * Phone:
-            <Field type="tell" name="phoneNumber" />
-            <ErrorMessage name="phoneNumber">
-              {(msg) => (
-                <CustomErrorMessage>
-                  {msg}
-                </CustomErrorMessage>
-              )}
-            </ErrorMessage>
-          </label>
-          <label className="relative">
-            * Message:
-            <Field type="textarea" name="message" />
-            <ErrorMessage name="message">
-              {(msg) => (
-                <CustomErrorMessage>
-                  {msg}
-                </CustomErrorMessage>
-              )}
-            </ErrorMessage>
-          </label>
-          <button type="submit">Send</button>
-        </Form>
+        {({ errors, touched }) => (
+          <Form
+            className="flex flex-col px-[12px] py-[36px] bg-[#EAEDF1]"
+            autoComplete="false"
+          >
+            <label className="form-label">
+              * Full name:
+              <Field
+                type="text"
+                name="fullName"
+                placeholder="John Rosie"
+                className={`form-input ${
+                  errors.fullName && touched
+                    ? "border-[#D28B8B]"
+                    : ""
+                }`}
+              />
+              <ErrorMessage name="fullName">
+                {(msg) => (
+                  <CustomErrorMessage>
+                    {msg}
+                  </CustomErrorMessage>
+                )}
+              </ErrorMessage>
+            </label>
+
+            <label className="form-label">
+              * E-mail:
+              <Field
+                type="email"
+                name="email"
+                placeholder="johnrosie@gmail.com"
+                className={`form-input ${
+                  errors.email && touched.email
+                    ? "border-[#D28B8B]"
+                    : ""
+                }`}
+              />
+              <ErrorMessage name="email">
+                {(msg) => (
+                  <CustomErrorMessage>
+                    {msg}
+                  </CustomErrorMessage>
+                )}
+              </ErrorMessage>
+            </label>
+
+            <label className="form-label">
+              * Phone:
+              <Field
+                type="tell"
+                name="phoneNumber"
+                placeholder="380961234567"
+                className={`form-input ${
+                  errors.phoneNumber && touched.phoneNumber
+                    ? "border-[#D28B8B]"
+                    : ""
+                }`}
+              />
+              <ErrorMessage name="phoneNumber">
+                {(msg) => (
+                  <CustomErrorMessage>
+                    {msg}
+                  </CustomErrorMessage>
+                )}
+              </ErrorMessage>
+            </label>
+
+            <label className="form-label">
+              Message:
+              <Field
+                component="textarea"
+                name="message"
+                draggable="false"
+                placeholder="My message...."
+                className={`form-input h-[160px] resize-none ${
+                  errors.message && touched.message
+                    ? "border-[#D28B8B]"
+                    : ""
+                }`}
+              />
+              <ErrorMessage name="message">
+                {(msg) => (
+                  <CustomErrorMessage>
+                    {msg}
+                  </CustomErrorMessage>
+                )}
+              </ErrorMessage>
+            </label>
+            <button
+              type="submit"
+              className="button-primary w-[100px] h-[40px] group"
+            >
+              <span className="group-hover:text-mainElementsColor transition-colors duration-200">
+                Send
+              </span>
+              <span
+                className="flex w-[32px] ml-auto h-[32px] rounded-full \
+           bg-mainElementsColor items-center justify-center"
+              >
+                <IoIosArrowRoundForward
+                  width="16"
+                  height="16"
+                  className="w-[16px] h-[16px]"
+                />
+              </span>
+            </button>
+          </Form>
+        )}
       </Formik>
     </section>
   );

@@ -1,9 +1,18 @@
 import Image from "next/image";
 import LogoIcon from "@/public/logo/Logo.png";
+import { FC } from "react";
 
-const Logo = () => {
+interface LogoProps {
+  containerStyles?: string;
+}
+
+const Logo: FC<LogoProps> = ({ containerStyles }) => {
   return (
-    <div className="flex items-center h-[40px]">
+    <div
+      className={`flex items-center h-[40px] ${
+        containerStyles ? `${containerStyles}` : ""
+      }`}
+    >
       <a href="#" className="flex items-center">
         <Image
           src={LogoIcon}

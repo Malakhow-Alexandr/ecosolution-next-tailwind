@@ -49,7 +49,7 @@ const CasesSlider: FC = () => {
     appendDots: (dots: any) => <ul className="hidden"></ul>
   };
   return (
-    <div className="relative max-w-[400px] mx-auto">
+    <div className="relative max-w-[479px] mx-auto">
       <SliderInfo
         bdLength={sliderItemsBd.length}
         currentSlide={currentSlide}
