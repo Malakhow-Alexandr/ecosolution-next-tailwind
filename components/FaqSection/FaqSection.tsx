@@ -12,7 +12,7 @@ const FaqSection = () => {
         <FaqTitle styles="tablet:hidden" />
         <FaqAccordion />
         <div className="tablet:flex flex-col justify-between">
-          <FaqTitle />
+          <FaqTitle styles="hidden tablet:block" />
           <div>
             <p
               className="mb-[12px] font-text text-[18px] desktop:text-[24px] \
