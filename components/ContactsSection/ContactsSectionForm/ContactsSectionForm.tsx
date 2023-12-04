@@ -45,7 +45,7 @@ const ContactsSectionForm = () => {
       >
         {({ errors, touched }) => (
           <Form
-            className="flex flex-col px-[12px] py-[36px] bg-[#EAEDF1]"
+            className="flex flex-col tablet:w-[342px] px-[12px] py-[36px] bg-[#EAEDF1]"
             autoComplete="false"
           >
             <label className="form-label">
@@ -134,7 +134,7 @@ const ContactsSectionForm = () => {
             </label>
             <button
               type="submit"
-              className="button-primary w-[100px] h-[40px] group"
+              className="button-primary mr-0 ml-auto w-[100px] h-[40px] group"
             >
               <span className="group-hover:text-mainElementsColor transition-colors duration-200">
                 Send

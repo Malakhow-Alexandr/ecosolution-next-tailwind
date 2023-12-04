@@ -1,5 +1,7 @@
-import Pic1 from "@/public/advantages/Pic1.png";
-import Pic2 from "@/public/advantages/Pic2.png";
+import Pic1Tab from "@/public/advantages/Pic1.png";
+import Pic2Tab from "@/public/advantages/Pic2.png";
+import Pic1Desk from "@/public/advantages/Pic1Desk.png";
+import Pic2Desk from "@/public/advantages/Pic2Desk.png";
 
 export const advantagesBd = [
   {
@@ -14,6 +16,16 @@ export const advantagesBd = [
       "we are aware that the results of our work have an impact on our lives \
        and the lives of future generations",
     picture: null
+  },
+  {
+    title: "Pic1",
+    advantage: "Pic1",
+    picture: [Pic1Tab, Pic1Desk]
+  },
+  {
+    title: "Pic2",
+    advantage: "Pic2",
+    picture: [Pic2Tab, Pic2Desk]
   },
   {
     title: "INNOVATION",

@@ -19,7 +19,7 @@ const FaqAccordion = () => {
   };
 
   return (
-    <ul className=" ">
+    <ul className="tablet:w-[50%]">
       {faqBd.map(({ id, meta, title }) => (
         <FaqAccordionItem
           onClick={() => onClick(id)}

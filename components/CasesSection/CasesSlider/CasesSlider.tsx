@@ -17,7 +17,6 @@ const CasesSlider: FC = () => {
     dots: false,
     centerMode: false,
     infinite: true,
-    slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
     focusOnSelect: true,
@@ -27,29 +26,34 @@ const CasesSlider: FC = () => {
     autoplaySpeed: 4000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-
     responsive: [
       {
         breakpoint: 767,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToShow: 1
         }
       },
       {
-        breakpoint: 768,
+        breakpoint: 1279,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 3000,
         settings: {
           slidesToShow: 2
         }
       }
     ],
+
     afterChange: (index: number) =>
       setCurrentSlide(index + 1),
 
     appendDots: (dots: any) => <ul className="hidden"></ul>
   };
   return (
-    <div className="relative max-w-[479px] mx-auto">
+    <div className="relative max-w-[479px] tablet:max-w-[100%] mx-auto">
       <SliderInfo
         bdLength={sliderItemsBd.length}
         currentSlide={currentSlide}
@@ -62,21 +66,23 @@ const CasesSlider: FC = () => {
       >
         {sliderItemsBd.map((sliderItem) => {
           return (
-            <div key={sliderItem.id} className="">
-              <Image
-                src={sliderItem.picture.src}
-                alt="This is a photo of our project location!"
-                width={596}
-                height={296}
-                className=""
-              />
-              <SliderCardMeta
-                expirationDate={sliderItem.expirationDate}
-                id={sliderItem.id}
-                mapLink={sliderItem.mapLink}
-                mapLinkTitle={sliderItem.mapLinkTitle}
-                title={sliderItem.title}
-              />
+            <div key={sliderItem.id}>
+              <div className="w-100">
+                <Image
+                  src={sliderItem.picture.src}
+                  alt="This is a photo of our project location!"
+                  width={596}
+                  height={296}
+                  className=""
+                />
+                <SliderCardMeta
+                  expirationDate={sliderItem.expirationDate}
+                  id={sliderItem.id}
+                  mapLink={sliderItem.mapLink}
+                  mapLinkTitle={sliderItem.mapLinkTitle}
+                  title={sliderItem.title}
+                />
+              </div>
             </div>
           );
         })}

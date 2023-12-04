@@ -8,12 +8,14 @@ const Footer = () => {
     <footer className="pb-[36px]">
       <div className="custom-container ">
         <Line classNames="mb-[24px]" />
-        <Logo containerStyles="justify-center" />
-        <ContactsSocials
-          faceBookLink="#"
-          instagramLink="#"
-          containerClassNames="flex  gap-[8px] mt-[24px] mb-[24px] mx-auto w-[56px]"
-        />
+        <div className="tablet:flex items-center">
+          <Logo containerStyles="justify-center tablet:justify-start" />
+          <ContactsSocials
+            faceBookLink="#"
+            instagramLink="#"
+            containerClassNames="flex  gap-[8px] mt-[24px] mb-[24px] mx-auto tablet:mr-auto tablet:ml-[100px] w-[56px]"
+          />
+        </div>
         <RenewableContacts />
       </div>
     </footer>

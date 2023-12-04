@@ -3,7 +3,10 @@ import MainAdvantages from "./MainAdvantages/MainAdvantages";
 
 const MainSection = () => {
   return (
-    <section id="Main" className="mb-[36px]">
+    <section
+      id="Main"
+      className="mb-[36px] tablet:mb-[100px]"
+    >
       <div className="custom-container">
         <MainMeta />
         <MainAdvantages />

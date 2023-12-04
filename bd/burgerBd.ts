@@ -4,7 +4,7 @@ export const burgerNav = [
     title: "Main"
   },
   {
-    href: "#About",
+    href: "#Main",
     title: "About"
   },
 

@@ -28,7 +28,7 @@ body {
   }
 
   .burger-menu {
-    @apply flex flex-col tablet:w-[365px] h-[88%] mx-auto mt-[36px] bg-[#173d33] bg-opacity-75 rounded-[25px] p-[24px];
+    @apply flex flex-col tablet:w-[320px] desktop:w-[365px] h-[93%] mx-auto tablet:ml-auto tablet:mr-[8%] desktop:mr-[17.5%] mt-[36px] bg-[#173d33] bg-opacity-75 rounded-[25px] p-[24px];
     @media (max-width: 479px) {
       max-width: 100%;
     }
@@ -38,7 +38,7 @@ body {
     }
   }
   .button-primary {
-    @apply flex items-center  mx-auto p-[4px] pl-[16px] 
+    @apply flex items-center p-[4px] pl-[16px] 
            border-[1px] border-mainElementsColor rounded-[500px] 
            text-mainText font-text text-[16px] tracking-[-0.64px] leading-[18px] 
           hover:bg-mainText transition-colors duration-200
@@ -84,5 +84,6 @@ body {
   margin: 0 -5px;
 }
 .slick-slide{
-  padding: 0 5px
+  padding: 0 5px;
+  width: 342px
 }

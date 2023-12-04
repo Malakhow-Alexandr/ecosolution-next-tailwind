@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Logo from "../Logo/Logo";
 import SideBar from "../SideBar/SideBar";
+import SecondaryButton from "../UtilsComponents/SecondaryButton";
 
 const Header = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -33,8 +34,12 @@ const Header = () => {
         <div>
           <Logo />
         </div>
-        <div className="ml-auto flex items-center">
+        <div className="ml-auto flex items-center tablet:gap-[12px]">
           <SideBar />
+          <SecondaryButton
+            title="Get in touch"
+            styles="group hidden tablet:flex w-[140px] h-[40px]"
+          />
         </div>
       </div>
     </header>

@@ -27,7 +27,7 @@ const FaqAccordionItem: FC<FaqAccordionItemProps> = ({
     >
       <button
         type="button"
-        className="relative w-full pl-[52px] mb-[16px] font-text text-[18px] text-left \
+        className="relative w-full pl-[52px] last:mb-0 mb-[16px] font-text text-mainText text-[18px] text-left \
          tracking-[-0.72.px] cursor-pointer"
         onClick={() => onClick()}
       >
@@ -49,8 +49,10 @@ const FaqAccordionItem: FC<FaqAccordionItemProps> = ({
             : { height: "0px" }
         }
       >
-        <div className="" ref={itemRef}>
-          <p className="block pl-[52px]">{meta}</p>
+        <div ref={itemRef}>
+          <p className="block pl-[52px] font-text text-mainText text-[14px] tracking-[-0.56px]">
+            {meta}
+          </p>
         </div>
       </div>
     </li>
