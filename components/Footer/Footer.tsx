@@ -1,4 +1,4 @@
-import ContactsSocials from "../ContactsSection/ContactsSocials";
+import ContactsSocials from "../ContactsSection/ContactsSectionContacts/ContactsSocials";
 import Logo from "../Logo/Logo";
 import RenewableContacts from "../RenewableSection/RenewableContacts";
 import Line from "../UtilsComponents/Line";

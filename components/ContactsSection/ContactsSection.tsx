@@ -1,4 +1,5 @@
-import ContactsSectionContacts from "./ContactsSectionContacts";
+import ContactsSectionContacts from "./ContactsSectionContacts/ContactsSectionContacts";
+import ContactsSectionForm from "./ContactsSectionForm/ContactsSectionForm";
 
 const ContactsSection = () => {
   return (
@@ -11,6 +12,7 @@ const ContactsSection = () => {
           CONTACT US
         </h2>
         <ContactsSectionContacts />
+        <ContactsSectionForm />
       </div>
     </section>
   );
