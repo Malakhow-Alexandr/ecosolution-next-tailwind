@@ -1,7 +1,26 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import VerticalLine from "../UtilsComponents/VerticalLine";
 
 const ElectricitySection = () => {
+  const [electricityCount, setElectricityCount] =
+    useState(1134147814);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setElectricityCount((prevCount) => prevCount + 1);
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  const formatNumber = (number: Number) => {
+    return number
+      .toLocaleString("en-US")
+      .replace(/,/g, ".");
+  };
+
   return (
     <section
       id="Electricity"
@@ -21,7 +40,7 @@ const ElectricitySection = () => {
            desktop:text-[164px] text-mainElementsColor text-center \
           leading-[48px] tablet:leading-[100px] desktop:leading-[164px]"
         >
-          1.134.147.814
+          {formatNumber(electricityCount)}
           <span
             className="text-mainText font-normal text-[20px] mobile:text-[24px] tablet:text-[28px] desktop:text-[48px]\ 
           leading-[24px] tablet:leading-[28px] desktop:leading-[48px]"
