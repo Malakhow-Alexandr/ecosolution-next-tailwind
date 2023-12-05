@@ -24,10 +24,10 @@ const AdvantageItem: FC<AdvantageItemProps> = ({
     <>
       {!picture ? (
         <li
-          className="h-[197px] desktop:h-[339px] pt-[17px] desktop:pt-[48px] px-[12px] pb-[5px] \
+          className="h-[220px] mobile:h-[197px] desktop:h-[339px] pt-[17px] desktop:pt-[48px] px-[12px] pb-[5px] \
          bg-[#EAEDF1] "
         >
-          <div className="flex gap-[8px] items-center mb-[33px] tablet:mb-[36px] desktop:mb-[94px]">
+          <div className="flex gap-[3px] mobile:gap-[8px] items-center mb-[25px] mobile:mb-[33px] tablet:mb-[36px] desktop:mb-[94px]">
             <div className="flex items-center justify-center">
               {title === "OPENNESS" && (
                 <OpennesIcon className="advantagesIcon" />
@@ -42,12 +42,12 @@ const AdvantageItem: FC<AdvantageItemProps> = ({
                 <QualityIcon className="advantagesIcon" />
               )}
             </div>
-            <h3 className="font-title text-[16px] tablet:text-[18px] desktop:text-[32px] leading-[24px] text-mainText ">
+            <h3 className="font-title text-[15px] mobile:text-[16px] tablet:text-[18px] desktop:text-[32px] leading-[24px] text-mainText ">
               {title}
             </h3>
           </div>
           <Line classNames="mb-[12px]" />
-          <p className="font-text text-[14px] desktop:text-[16px] text-mainText tracking-[-0.56px] desktop:tracking-[-0.64px]">
+          <p className="font-text text-[13px] desktop:text-[16px] text-mainText tracking-[-0.56px] desktop:tracking-[-0.64px]">
             {advantage}
           </p>
         </li>
