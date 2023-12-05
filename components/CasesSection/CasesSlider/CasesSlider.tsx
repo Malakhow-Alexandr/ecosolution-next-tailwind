@@ -73,7 +73,7 @@ const CasesSlider: FC = () => {
                   alt="This is a photo of our project location!"
                   width={596}
                   height={296}
-                  className="w-[100%]"
+                  className="w-[100%] desktop:h-[300px] tablet:h-[168px]"
                 />
                 <SliderCardMeta
                   expirationDate={sliderItem.expirationDate}

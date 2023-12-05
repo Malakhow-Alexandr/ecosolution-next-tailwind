@@ -41,7 +41,7 @@ const SliderCardMeta: FC<SliderCardMEtaProps> = ({
       </div>
       <Line
         classNames={` ${
-          id === 1 || id === 4 ? "mt-[14px]" : "mt-[34px]"
+          id === 1 || id === 4 ? "mt-[14px]" : "mt-[35px]"
         } mb-[12px]`}
       />
       <div className="flex justify-between">
