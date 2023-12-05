@@ -1,5 +1,6 @@
 import ContactsSocials from "../ContactsSection/ContactsSectionContacts/ContactsSocials";
 import Logo from "../Logo/Logo";
+import { Logo as NewLogo } from "../Logo/NewLogo";
 import RenewableContacts from "../RenewableSection/RenewableContacts";
 import Line from "../UtilsComponents/Line";
 
@@ -9,7 +10,13 @@ const Footer = () => {
       <div className="custom-container ">
         <Line classNames="mb-[24px]" />
         <div className="tablet:flex items-center">
-          <Logo containerStyles="justify-center tablet:justify-start" />
+          {/* <Logo containerStyles="justify-center tablet:justify-start" /> */}
+          <NewLogo
+            active={false}
+            containerStyles={
+              "flex items-center justify-center tablet:justify-start"
+            }
+          />
           <ContactsSocials
             faceBookLink="#"
             instagramLink="#"

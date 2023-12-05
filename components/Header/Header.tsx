@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Logo from "../Logo/Logo";
+
+import { Logo } from "../Logo/NewLogo";
 import SideBar from "../SideBar/SideBar";
 import SecondaryButton from "../UtilsComponents/SecondaryButton";
 
@@ -32,7 +33,7 @@ const Header = () => {
     >
       <div className="custom-container flex">
         <div>
-          <Logo />
+          <Logo active={scrolling} />
         </div>
         <div className="ml-auto flex items-center tablet:gap-[12px]">
           <SideBar />
