@@ -26,7 +26,9 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMzyG-kcI7lzOCQI5NLOX14MPsflmncmLtwdfBj8cXimv3slIdTPPd84WA86GFlxYbAkI&usqp=CAU",
+        url: new URL(
+          "https://ecosolution-next-tailwind-1kd3bm3q8-malakhow-alexandr.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FCase4.0c514ac9.png&w=640&q=75"
+        ),
         width: 225,
         height: 225,
         alt: "Wind power plants in the field."
