@@ -4,7 +4,7 @@ import MainAdvantages from "./MainAdvantages/MainAdvantages";
 const MainSection = () => {
   return (
     <section
-      id="Main"
+      id="About"
       className="mb-[36px] tablet:mb-[100px] desktop:mb-[120px]"
     >
       <div className="custom-container">

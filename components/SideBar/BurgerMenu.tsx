@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useRef, useEffect } from "react";
 import BurgerNav from "./BurgerNav";
 import { IoClose } from "react-icons/io5";
 
@@ -11,6 +11,38 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({
   toggle,
   isOpen
 }) => {
+  const observer = useRef<IntersectionObserver | null>(
+    null
+  );
+  const [activeSection, setActiveSection] = useState<
+    string | null
+  >(null);
+
+  useEffect(() => {
+    observer.current = new IntersectionObserver(
+      (entries) => {
+        const visibleSection = entries.find(
+          (entry) => entry.isIntersecting
+        )?.target;
+        if (visibleSection) {
+          setActiveSection(visibleSection.id);
+        }
+      }
+    );
+
+    const sections = document.querySelectorAll("section");
+
+    sections.forEach((section) => {
+      observer.current?.observe(section);
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        observer.current?.unobserve(section);
+      });
+    };
+  }, []);
+
   return (
     <div className={`${isOpen ? "burger-menu" : "hidden"}`}>
       <button
@@ -23,7 +55,10 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({
         close
       </button>
       <span className="block border-b-[1px] border-white w-[100%] mt-[6px] mb-[16px]"></span>
-      <BurgerNav closeMenu={toggle} />
+      <BurgerNav
+        closeMenu={toggle}
+        activeSection={activeSection}
+      />
     </div>
   );
 };

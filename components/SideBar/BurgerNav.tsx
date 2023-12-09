@@ -7,9 +7,14 @@ import { burgerNav, burgerSocials } from "@/bd/burgerBd";
 
 interface BurgerNavProps {
   closeMenu: () => void;
+  activeSection: string | null;
 }
 
-const BurgerNav: FC<BurgerNavProps> = ({ closeMenu }) => {
+const BurgerNav: FC<BurgerNavProps> = ({
+  closeMenu,
+  activeSection
+}) => {
+  console.log(activeSection);
   return (
     <div className="flex flex-col h-full">
       <div className="flex flex-col mb-auto">
@@ -23,7 +28,7 @@ const BurgerNav: FC<BurgerNavProps> = ({ closeMenu }) => {
                hover:text-white \
                 transition-colors duration-[250ms]
                 ${
-                  link.title === "Main"
+                  link.title === activeSection
                     ? "text-mainElementsColor"
                     : "text-[#ffffff] text-opacity-25"
                 }`}

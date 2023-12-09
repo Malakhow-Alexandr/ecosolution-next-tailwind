@@ -4,7 +4,10 @@ import RenewableContacts from "./RenewableContacts";
 
 const RenewableSection = () => {
   return (
-    <section className="pt-[250px] mb-[36px] tablet:mb-[40px] desktop:mb-[36px]">
+    <section
+      id="Main"
+      className="pt-[250px] mb-[36px] tablet:mb-[40px] desktop:mb-[36px]"
+    >
       <div className="custom-container">
         <div className="tablet:flex tablet:justify-between">
           <h1

@@ -18,7 +18,7 @@ export const burgerNav = [
   },
   {
     href: "#Contacts",
-    title: "Contact Us"
+    title: "Contacts"
   }
 ];
 
