@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: OgpImage.src,
-        width: 417,
-        height: 207,
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMzyG-kcI7lzOCQI5NLOX14MPsflmncmLtwdfBj8cXimv3slIdTPPd84WA86GFlxYbAkI&usqp=CAU",
+        width: 225,
+        height: 225,
         alt: "Wind power plants in the field."
       }
     ],
@@ -49,19 +49,6 @@ export default function RootLayout({
       lang="en"
       className={`${fira.variable} ${oswald.variable}`}
     >
-      {/* <Head>
-        <meta property="og:image" content={OgpImage.src} />
-        <meta
-          property="og:image:type"
-          content="image/png"
-        />
-        <meta property="og:image:width" content="417" />
-        <meta property="og:image:height" content="207" />
-        <meta
-          property="og:image:alt"
-          content="Wind power plants in the field."
-        />
-      </Head> */}
       <body>
         <div id="backdrop-root"></div>
         <Header />
