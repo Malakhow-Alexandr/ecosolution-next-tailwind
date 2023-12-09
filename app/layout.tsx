@@ -5,6 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import Head from "next/head";
 
 const oswald = Oswald({
   weight: ["400", "700"],
@@ -19,17 +20,16 @@ const fira = Fira_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    "https://ecosolution-next-tailwind.vercel.app/"
+  ),
   openGraph: {
-    images: [
-      {
-        url: "https://ecosolution-next-tailwind.vercel.app/api/og",
-        width: 417,
-        height: 207,
-        alt: "Wind power plants in the field."
-      }
-    ],
+    url: "https://ecosolution-next-tailwind.vercel.app/",
+    siteName: "Ecosolution",
     title: "Ecosolution",
-    description: "Ecosolution GREENERGY FOR LIFE"
+    description: "Ecosolution GREENERGY FOR LIFE",
+    locale: "en_US",
+    type: "website"
   },
   title: "Ecosolution",
   description: "Ecosolution GREENERGY FOR LIFE"
