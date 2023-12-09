@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "http://localhost:3000/api/og",
+        url: "https://ecosolution-next-tailwind.vercel.app/api/og",
         width: 417,
         height: 207,
         alt: "Wind power plants in the field."
