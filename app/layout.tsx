@@ -5,7 +5,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-import OgpImage from "@/public/cases/Case4.png";
 
 const oswald = Oswald({
   weight: ["400", "700"],
@@ -20,9 +19,6 @@ const fira = Fira_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    "https://ecosolution-next-tailwind"
-  ),
   openGraph: {
     images: [
       {
