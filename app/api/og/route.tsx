@@ -4,6 +4,11 @@ import { title } from "process";
 
 export const runtime = "edge";
 
+export const size = {
+  width: 450,
+  height: 320
+};
+
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
@@ -26,22 +31,19 @@ export async function GET(request: Request) {
     ).toString("base64")}`;
     return new ImageResponse(
       (
-        <div tw="flex flex-col w-full h-full items-center justify-center bg-white">
-          <div tw="bg-gray-50 flex flex-col w-full">
-            <div tw="flex flex-col md:flex-row w-full py-12 px-4 md:items-center justify-between p-8">
-              <h1 tw="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 text-left">
-                {title}
-              </h1>
-              <img
-                src={dataUrl}
-                alt="Wind power plants in the field."
-                width={417}
-                height={207}
-              />
-            </div>
-          </div>
+        <div tw="flex flex-col h-full w-full px-4 justify-start">
+          <h1 tw="text-3xl font-bold tracking-tight text-gray-900 text-left mb-[10px]">
+            {title}
+          </h1>
+          <img
+            src={dataUrl}
+            alt="Wind power plants in the field."
+            width={417}
+            height={207}
+          />
         </div>
-      )
+      ),
+      { ...size }
     );
   } catch (error: any) {
     return new Response("Faild to generate OG", {
