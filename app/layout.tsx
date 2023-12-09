@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-import OgpImage from "@/public/cases/Case4.png";
+import { openGraphImage } from "./shared-metadata";
 
 const oswald = Oswald({
   weight: ["400", "700"],
@@ -21,6 +21,10 @@ const fira = Fira_Sans({
 });
 
 export const metadata: Metadata = {
+  openGraph: {
+    ...openGraphImage,
+    title: "Ecosolution GREENERGY FOR LIFE"
+  },
   title: "Ecosolution",
   description: "Ecosolution GREENERGY FOR LIFE"
 };
@@ -35,7 +39,7 @@ export default function RootLayout({
       lang="en"
       className={`${fira.variable} ${oswald.variable}`}
     >
-      <Head>
+      {/* <Head>
         <meta property="og:image" content={OgpImage.src} />
         <meta
           property="og:image:type"
@@ -47,7 +51,7 @@ export default function RootLayout({
           property="og:image:alt"
           content="Wind power plants in the field."
         />
-      </Head>
+      </Head> */}
       <body>
         <div id="backdrop-root"></div>
         <Header />
