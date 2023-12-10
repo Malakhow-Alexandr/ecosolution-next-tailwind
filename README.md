@@ -1,4 +1,6 @@
-# <img src="./public/logo/Logo.png" alt="Ecosolution - RENEWABLE ENERGY For any task!" width="538" height="80"> 
+<div style="color: white; background-color: #fff; text-align: start; height: 100px">
+<img src="./public/logo/Logo.png" alt="Ecosolution - RENEWABLE ENERGY For any task!" width="538" height="80">     
+</div>
 
 ## Description:
 Ecosolution provides a fully responsive design, tailored for any device (mobile phone, tablet, desktop). Our application offers the development and implementation of renewable, environmentally friendly energy sources. We specialize in energy generation using wind, solar, water, and biomass, offering innovative solutions for sustainable electricity production. Join us in creating an environmentally sustainable future.
