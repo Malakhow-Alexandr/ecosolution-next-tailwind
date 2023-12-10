@@ -1,5 +1,4 @@
 import ContactsSocials from "../ContactsSection/ContactsSectionContacts/ContactsSocials";
-import Logo from "../Logo/Logo";
 import { Logo as NewLogo } from "../Logo/NewLogo";
 import RenewableContacts from "../RenewableSection/RenewableContacts";
 import Line from "../UtilsComponents/Line";
