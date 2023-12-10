@@ -13,7 +13,7 @@ const RenewableContacts = () => {
       <a
         href="mailto:office@ecosolution.com"
         className="block w-[163px] mx-auto desktop:ml-[493px] font-text text-[16px] \
-        tracking-[-0.64px] text-mainText hover:text-mainElementsColor transition-colors duration-200"
+        tracking-[-0.64px] text-mainText hover:text-mainElementsColor focus:text-mainElementsColor transition-colors duration-200"
       >
         office@ecosolution.com
       </a>

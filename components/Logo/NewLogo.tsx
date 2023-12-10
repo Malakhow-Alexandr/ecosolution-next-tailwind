@@ -22,6 +22,8 @@ export const Logo: React.FC<ILogo> = ({
         href="#"
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
+        onFocus={() => setHover(true)}
+        onBlur={() => setHover(false)}
         className={`${containerStyles ? "" : ""}`}
       >
         <svg

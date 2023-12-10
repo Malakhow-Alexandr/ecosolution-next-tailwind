@@ -30,11 +30,11 @@ const SliderCardMeta: FC<SliderCardMEtaProps> = ({
           <span
             className="icon-link flex items-center justify-center w-[60px] h-[60px] ml-auto  \
                    bg-mainElementsColor rounded-full \
-                   group-hover:bg-mainText transition-colors duration-200"
+                   group-hover:bg-mainText group-focus:bg-mainText transition-colors duration-200"
           >
             <GoArrowUpRight
               className="w-[24px] h-[24px] text-[#173D33] group-hover:text-mainElementsColor \
-                       transition-colors duration-200"
+                       group-focus:text-mainElementsColor transition-colors duration-200"
             />
           </span>
         </a>

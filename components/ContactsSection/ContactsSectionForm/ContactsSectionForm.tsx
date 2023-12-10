@@ -146,9 +146,9 @@ const ContactsSectionForm = () => {
               <button
                 disabled={isButtonDisabled}
                 type="submit"
-                className="button-primary disabled:bg-red-300 mr-0 ml-auto w-[100px] h-[40px] group"
+                className="button-primary disabled:bg-[#D28B8B] mr-0 ml-auto w-[100px] h-[40px] group"
               >
-                <span className="group-hover:text-mainElementsColor transition-colors duration-200">
+                <span className="group-hover:text-mainElementsColor group-focus:text-mainElementsColor transition-colors duration-200">
                   Send
                 </span>
                 <span

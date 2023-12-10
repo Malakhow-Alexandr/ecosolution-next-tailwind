@@ -28,7 +28,7 @@ const RenewableSection = () => {
               href="#Cases"
               className="button-primary mb-[24px] mx-auto tablet:mr-auto tablet:ml-0 w-[141px] h-[39px] group"
             >
-              <span className="group-hover:text-mainElementsColor transition-colors duration-200">
+              <span className="group-hover:text-mainElementsColor group-focus:text-mainElementsColor transition-colors duration-200">
                 Learn more
               </span>
               <span
