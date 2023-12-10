@@ -6,7 +6,6 @@ import ElectricitySection from "./ElectricitySection/ElectricitySection";
 import CasesSection from "./CasesSection/CasesSection";
 import ContactsSection from "./ContactsSection/ContactsSection";
 import FaqSection from "./FaqSection/FaqSection";
-import ScrollToTop from "./ScrollToTop/ScrollToTop";
 
 export {
   RenewableSection,
@@ -16,6 +15,5 @@ export {
   ElectricitySection,
   CasesSection,
   ContactsSection,
-  FaqSection,
-  ScrollToTop
+  FaqSection
 };
