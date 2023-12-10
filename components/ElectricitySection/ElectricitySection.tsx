@@ -36,7 +36,7 @@ const ElectricitySection = () => {
         </h2>
         <VerticalLine classNames="h-[48px] tablet:h-[87px]" />
         <p
-          className="flex items-center gap-[8px] font-title font-bold text-[40px] mobile:text-[48px] tablet:text-[100px] \
+          className="flex items-center justify-between gap-[8px] font-title font-bold text-[40px] mobile:text-[48px] tablet:text-[100px] \
            desktop:text-[164px] text-mainElementsColor text-center \
           leading-[48px] tablet:leading-[100px] desktop:leading-[164px]"
         >
