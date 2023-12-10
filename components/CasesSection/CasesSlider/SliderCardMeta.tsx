@@ -23,6 +23,9 @@ const SliderCardMeta: FC<SliderCardMEtaProps> = ({
         <a
           href={mapLink}
           className="flex items-center slider-icon-linc group"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          aria-label="link-to-map"
         >
           <span className="block w-[175px] font-text text-mainText text-[18px] tracking-[-0.72px]">
             {mapLinkTitle}
@@ -35,6 +38,7 @@ const SliderCardMeta: FC<SliderCardMEtaProps> = ({
             <GoArrowUpRight
               className="w-[24px] h-[24px] text-[#173D33] group-hover:text-mainElementsColor \
                        group-focus:text-mainElementsColor transition-colors duration-200"
+              aria-label="link to map icon"
             />
           </span>
         </a>

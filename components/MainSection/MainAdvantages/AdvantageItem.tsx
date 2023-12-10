@@ -30,16 +30,28 @@ const AdvantageItem: FC<AdvantageItemProps> = ({
           <div className="flex gap-[3px] mobile:gap-[8px] items-center mb-[25px] mobile:mb-[33px] tablet:mb-[36px] desktop:mb-[94px]">
             <div className="flex items-center justify-center">
               {title === "OPENNESS" && (
-                <OpennesIcon className="advantagesIcon" />
+                <OpennesIcon
+                  className="advantagesIcon"
+                  aria-label="advantagesIcon"
+                />
               )}
               {title === "RESPONSIBILITY" && (
-                <ResponsibilityIcon className="advantagesIcon" />
+                <ResponsibilityIcon
+                  className="advantagesIcon"
+                  aria-label="advantagesIcon"
+                />
               )}
               {title === "INNOVATION" && (
-                <InnovationIcon className="advantagesIcon" />
+                <InnovationIcon
+                  className="advantagesIcon"
+                  aria-label="advantagesIcon"
+                />
               )}
               {title === "QUALITY" && (
-                <QualityIcon className="advantagesIcon" />
+                <QualityIcon
+                  className="advantagesIcon"
+                  aria-label="advantagesIcon"
+                />
               )}
             </div>
             <h3 className="font-title text-[15px] mobile:text-[16px] tablet:text-[18px] desktop:text-[32px] leading-[24px] text-mainText ">

@@ -43,15 +43,22 @@ const BurgerNav: FC<BurgerNavProps> = ({
         <ul className="flex flex-row gap-[8px]">
           {burgerSocials.map((link) => (
             <li key={link.title}>
-              <a href={link.href} target="_blank">
+              <a
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label={`link-${link.title}`}
+              >
                 {link.title === "Instagram" ? (
                   <InstaIcon
+                    aria-label="instagram-icon"
                     width={24}
                     height={24}
                     className="burger-nav-icon"
                   />
                 ) : (
                   <FaceBookIcon
+                    aria-label="facebook-icon"
                     width={24}
                     height={24}
                     className="burger-nav-icon"

@@ -14,8 +14,12 @@ const BurgerButton: React.FC<BurgerButtonProps> = ({
       rounded-full flex items-center justify-center \ 
       bg-[#DCEFD8] hover:scale-105 hover:bg-mainElementsColor \
       focus:scale-105 focus:bg-mainElementsColor transition-all duration-200"
+      aria-label="burger-open-button"
     >
-      <RxHamburgerMenu className="w-[16px] h-[16px]" />
+      <RxHamburgerMenu
+        className="w-[16px] h-[16px]"
+        aria-label="burger-open-icon"
+      />
     </button>
   );
 };

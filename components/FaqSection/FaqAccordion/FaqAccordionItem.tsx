@@ -32,9 +32,15 @@ const FaqAccordionItem: FC<FaqAccordionItemProps> = ({
         onClick={() => onClick()}
       >
         {isOpen ? (
-          <MinusIcon className="accordion-icon stroke-mainText" />
+          <MinusIcon
+            className="accordion-icon stroke-mainText"
+            aria-label="faq-minus-icon"
+          />
         ) : (
-          <PlusIcon className="accordion-icon stroke-mainElementsColor" />
+          <PlusIcon
+            className="accordion-icon stroke-mainElementsColor"
+            aria-label="faq-plus-icon"
+          />
         )}
         {title}
       </button>

@@ -24,10 +24,12 @@ const ContactsSectionContacts = () => {
       <a
         href={`callto:${phone1Call}`}
         className="contacts-link group"
+        aria-label="contacts-phone-link"
       >
         <PhoneIcon
           width={24}
           height={24}
+          aria-label="contacts-phone-icon"
           className="w-[24px] h-[24px] stroke-mainText transition-colors duration-200  \
            group-hover:stroke-mainElementsColor group-focus:stroke-mainElementsColor"
         />
@@ -35,11 +37,13 @@ const ContactsSectionContacts = () => {
       </a>
       <a
         href={`callto:${phone2Call}`}
+        aria-label="contacts-phone-link"
         className="flex gap-[8px] group font-text text-[20px] text-mainText mb-[24px]"
       >
         <PhoneIcon
           width={24}
           height={24}
+          aria-label="contacts-phone-icon"
           className="w-[24px] h-[24px] stroke-mainText transition-colors duration-200  \
            group-hover:stroke-mainElementsColor group-focus:stroke-mainElementsColor"
         />
@@ -50,8 +54,10 @@ const ContactsSectionContacts = () => {
       <a
         href={`mailto:${email}`}
         className="contacts-link group"
+        aria-label="contacts-email-link"
       >
         <EmailIcon
+          aria-label="contacts-email-icon"
           className="w-[24px] h-[24px] stroke-mainText transition-colors duration-200  \
            group-hover:stroke-mainElementsColor group-focus:stroke-mainElementsColor"
         />
@@ -64,8 +70,12 @@ const ContactsSectionContacts = () => {
         <a
           href={addressLink}
           className="contacts-link group"
+          aria-label="contacts-address-link"
         >
-          <MapIcon className="w-[24px] h-[24px] stroke-mainText group-hover:stroke-mainElementsColor group-focus:stroke-mainElementsColor transition-colors duration-200" />
+          <MapIcon
+            aria-label="contacts-map-icon"
+            className="w-[24px] h-[24px] stroke-mainText group-hover:stroke-mainElementsColor group-focus:stroke-mainElementsColor transition-colors duration-200"
+          />
           <span className="block w-[212px] text-[20px] tracking-[-0.8px] leading-normal">
             {address}
           </span>
