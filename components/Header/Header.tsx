@@ -26,9 +26,7 @@ const Header = () => {
   return (
     <header
       className={`${
-        scrolling
-          ? "bg-[#173D33] bg-opacity-50 backdrop-blur-[2px]"
-          : ""
+        scrolling ? "bg-[#fff]  backdrop-blur-[2px]" : ""
       } fixed left-0 right-0 mx-auto py-[10px] transition-colors duration-200 z-[10]`}
     >
       <div className="custom-container flex">
