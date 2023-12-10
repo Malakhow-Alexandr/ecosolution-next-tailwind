@@ -5,10 +5,7 @@ import HeroBannerDesktop from "@/public/hero/HeroBunnerDesktop.png";
 
 const HeroSection = () => {
   return (
-    <section
-      className="mb-[36px] tablet:mb-[100px] desktop:mb-[120px]"
-      id="About"
-    >
+    <section className="mb-[36px] tablet:mb-[100px] desktop:mb-[120px]">
       <div className="custom-container">
         <Image
           src={HeroBannerMobile}

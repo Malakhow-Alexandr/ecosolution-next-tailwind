@@ -5,7 +5,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-import Head from "next/head";
 
 const oswald = Oswald({
   weight: ["400", "700"],

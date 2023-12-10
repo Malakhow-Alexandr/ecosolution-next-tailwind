@@ -54,7 +54,7 @@ const ContactsSectionForm = () => {
             <Form
               className="flex flex-col tablet:w-[342px] desktop:w-[596px] px-[12px] py-[36px] \
              desktop:p-[48px] bg-[#EAEDF1] "
-              autoComplete="false"
+              autoComplete="off"
             >
               <label className="form-label">
                 * Full name:
@@ -101,7 +101,7 @@ const ContactsSectionForm = () => {
               <label className="form-label">
                 * Phone:
                 <Field
-                  type="tell"
+                  type="tel"
                   name="phoneNumber"
                   placeholder="380961234567"
                   className={`form-input ${

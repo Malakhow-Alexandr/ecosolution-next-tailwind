@@ -18,12 +18,14 @@ const ContactsSocials: FC<ContactsSocialsProps> = ({
       <a href={instagramLink} className="group">
         <InstagramIcon
           className="stroke-mainText group-hover:stroke-mainElementsColor \
+          group-focus:stroke-mainElementsColor
            transition-colors duration-200"
         />
       </a>
       <a href={faceBookLink} className="group">
         <FaceBookIcon
           className="stroke-mainText group-hover:stroke-mainElementsColor \
+          group-focus:stroke-mainElementsColor
            transition-colors duration-200"
         />
       </a>
