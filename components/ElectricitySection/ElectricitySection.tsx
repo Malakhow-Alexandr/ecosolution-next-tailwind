@@ -24,7 +24,7 @@ const ElectricitySection = () => {
   return (
     <section
       id="Electricity"
-      className="mb-[36px] tablet:mb-[100px]"
+      className="pt-[36px] tablet:pt-[100px] desktop:pt-[120px]"
     >
       <div className="custom-container flex flex-col gap-[24px] items-center">
         <h2

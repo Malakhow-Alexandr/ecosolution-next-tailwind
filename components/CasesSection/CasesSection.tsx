@@ -5,7 +5,7 @@ const CasesSection = () => {
     <section
       id="Cases"
       data-section-id="Cases"
-      className="mb-[36px] tablet:mb-[100px]"
+      className="pt-[65px] tablet:pt-[100px] desktop:pt-[120px]"
     >
       <div className="custom-container">
         <div>

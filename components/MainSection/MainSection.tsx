@@ -6,7 +6,7 @@ const MainSection = () => {
     <section
       id="About"
       data-section-id="About"
-      className="mb-[36px] tablet:mb-[100px] desktop:mb-[120px]"
+      className="pt-[65px] tablet:pt-[100px] desktop:pt-[120px]"
     >
       <div className="custom-container">
         <MainMeta />

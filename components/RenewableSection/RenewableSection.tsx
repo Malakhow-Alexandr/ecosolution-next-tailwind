@@ -7,7 +7,7 @@ const RenewableSection = () => {
     <section
       id="Main"
       data-section-id="Main"
-      className="pt-[250px] mb-[36px] tablet:mb-[40px] desktop:mb-[36px]"
+      className="pt-[250px]"
     >
       <div className="custom-container">
         <div className="tablet:flex tablet:justify-between">

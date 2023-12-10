@@ -12,16 +12,16 @@ const SecondaryButton: FC<SecondaryButtonProps> = ({
 }) => {
   return (
     <a
-      href="#ContactsForm"
+      href="#Contacts"
       className={`button-secondary mx-auto ${
         styles ? `${styles}` : ""
       }`}
-      aria-label="anchor link to Contacts form"
+      aria-label="anchor link to Contacts"
     >
       <span>{title}</span>
       <span className="button-secondary-icon">
         <FaArrowDown
-          aria-label="anchor icon to Contacts form"
+          aria-label="anchor icon to Contacts"
           className="w-[8px] h-[8px] fill-mainText"
         />
       </span>

@@ -6,10 +6,11 @@ const ContactsSection = () => {
     <section
       id="Contacts"
       data-section-id="Contacts"
-      className="mb-[36px] tablet:mb-[100px]"
+      className="pt-[65px] tablet:pt-[100px] desktop:pt-[120px] mb-[36px] tablet:mb-[100px]"
     >
       <div className="custom-container">
         <h2
+          id="ContactsTitle"
           className="font-title text-[28px] tablet:text-[36px] text-mainText text-center \ 
                         leading-[28px] tablet:leading-[36px] mb-[24px] tablet:mb-[40px]"
         >

@@ -7,7 +7,7 @@ const FaqSection = () => {
     <section
       id="FAQ"
       data-section-id="FAQ"
-      className="mb-[36px] tablet:mb-[100px]"
+      className="pt-[65px] tablet:pt-[100px] desktop:pt-[120px]"
     >
       <div className="custom-container tablet:flex tablet:gap-[24px] desktop:gap-[185px]">
         <FaqTitle styles="tablet:hidden" />
