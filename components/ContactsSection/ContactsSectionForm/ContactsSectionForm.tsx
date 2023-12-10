@@ -22,6 +22,7 @@ interface Errors {
   email?: string;
   phoneNumber?: string;
 }
+
 const ContactsSectionForm = () => {
   const initialValues = {
     fullName: "",
@@ -56,6 +57,7 @@ const ContactsSectionForm = () => {
              desktop:p-[48px] bg-[#EAEDF1] "
               autoComplete="off"
             >
+              <h2 className="hidden">Form</h2>
               <label className="form-label">
                 * Full name:
                 <Field

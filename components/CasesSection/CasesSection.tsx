@@ -4,6 +4,7 @@ const CasesSection = () => {
   return (
     <section
       id="Cases"
+      data-section-id="Cases"
       className="mb-[36px] tablet:mb-[100px]"
     >
       <div className="custom-container">

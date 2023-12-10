@@ -19,18 +19,21 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({
   >(null);
 
   useEffect(() => {
+    const sections = document.querySelectorAll(
+      "section[data-section-id]"
+    );
     observer.current = new IntersectionObserver(
       (entries) => {
         const visibleSection = entries.find(
           (entry) => entry.isIntersecting
         )?.target;
         if (visibleSection) {
-          setActiveSection(visibleSection.id);
+          setActiveSection(
+            visibleSection.getAttribute("data-section-id")
+          );
         }
       }
     );
-
-    const sections = document.querySelectorAll("section");
 
     sections.forEach((section) => {
       observer.current?.observe(section);

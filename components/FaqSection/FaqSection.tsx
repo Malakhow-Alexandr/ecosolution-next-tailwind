@@ -6,6 +6,7 @@ const FaqSection = () => {
   return (
     <section
       id="FAQ"
+      data-section-id="FAQ"
       className="mb-[36px] tablet:mb-[100px]"
     >
       <div className="custom-container tablet:flex tablet:gap-[24px] desktop:gap-[185px]">

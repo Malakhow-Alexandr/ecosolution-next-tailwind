@@ -19,6 +19,7 @@ const {
 const ContactsSectionContacts = () => {
   return (
     <section className="flex flex-col mb-[36px]">
+      <h2 className="hidden">Contacts</h2>
       <h4 className="contacts-title">Phone:</h4>
       <a
         href={`callto:${phone1Call}`}

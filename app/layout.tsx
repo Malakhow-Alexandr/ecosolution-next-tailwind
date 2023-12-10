@@ -49,6 +49,7 @@ export default function RootLayout({
         <Header />
 
         {children}
+
         <Footer />
         <ToastContainer
           position="top-right"

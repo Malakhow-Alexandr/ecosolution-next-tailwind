@@ -14,7 +14,6 @@ const BurgerNav: FC<BurgerNavProps> = ({
   closeMenu,
   activeSection
 }) => {
-  console.log(activeSection);
   return (
     <div className="flex flex-col h-full">
       <div className="flex flex-col mb-auto">

@@ -5,6 +5,7 @@ const ContactsSection = () => {
   return (
     <section
       id="Contacts"
+      data-section-id="Contacts"
       className="mb-[36px] tablet:mb-[100px]"
     >
       <div className="custom-container">
