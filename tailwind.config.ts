@@ -4,32 +4,28 @@ const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}"
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        // "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        // "gradient-conic":
-        //   "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+      backgroundImage: {},
       colors: {
         burgerButtonColor: "#DCEFD8",
         mainText: "#173D33",
         secondaryText: "#828382",
-        mainElementsColor: "#97D28B",
+        mainElementsColor: "#97D28B"
       },
       fontFamily: {
         title: ["var(--font-oswald)"],
-        text: ["var(--font-fira)"],
+        text: ["var(--font-fira)"]
       },
       screens: {
         mobile: "360px",
         tablet: "768px",
-        desktop: "1280px",
-      },
-    },
+        desktop: "1280px"
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 };
 export default config;
