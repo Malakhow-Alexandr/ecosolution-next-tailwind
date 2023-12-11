@@ -86,8 +86,23 @@ body {
 
 .slick-list{
   margin: 0 -5px;
+  @media screen and (min-width:768px) and (max-width:1279px){
+    margin: 0 -12px;
+  }
+  @media screen and (min-width:1280px){
+    margin: 0 -24px;
+  }
 }
 .slick-slide{
   padding: 0 5px;
-  width: 342px
+  width: 342px;
+
+@media screen and (min-width:768px) and (max-width:1279px){
+    padding: 0 12px;
+  }
+
+  @media screen and (min-width:1280px){
+    padding: 0 24px;
+    width: 596px;
+  }
 }

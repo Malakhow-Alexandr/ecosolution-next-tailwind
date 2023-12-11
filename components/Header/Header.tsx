@@ -31,7 +31,7 @@ const Header = () => {
     >
       <div className="custom-container flex">
         <div>
-          <Logo active={scrolling} />
+          <Logo />
         </div>
         <div className="ml-auto flex items-center tablet:gap-[12px]">
           <SideBar />
