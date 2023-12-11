@@ -12,7 +12,6 @@ const Footer = () => {
         <div className="tablet:flex items-center">
           <div className="flex items-center justify-between">
             <NewLogo
-              active={false}
               containerStyles={
                 "flex items-center justify-start "
               }
